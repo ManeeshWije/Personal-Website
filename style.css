@@ -4,3 +4,259 @@
     margin: 0;
     padding: 0;
 }
+
+html
+{
+    background-image: linear-gradient(#ffcc99, #ffff);
+}
+
+header
+{
+
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.main-nav
+{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+
+}
+
+.main-nav li
+{
+    display: inline-block;
+}
+
+.main-nav li a
+{
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+
+}
+
+.main-nav li.active a
+{
+    border: 1px solid black;
+}
+
+.main-nav li a:hover
+{
+    border: 1px solid black;
+}
+
+.logo img
+{
+    width: 125px;
+    height: auto;
+    float: left;
+    position: relative;
+    right: 100px;
+    top: 25px;
+
+}
+
+body
+{
+    font-family: monospace;
+}
+
+.row
+{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero
+{
+    position: absolute;
+    width: 1200px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.hero img
+{
+    border: 4px solid black;
+    margin-left: 800px;
+    margin-right: 0;
+    margin-bottom: 500;
+    margin-top: 0;
+    position: relative;
+    bottom: 200px;
+    left: 30px;
+
+}
+
+.blog
+{
+    position: absolute;
+    width: 1200px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.blog h1
+{
+    color: black;
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 275px;
+    position: relative;
+    left: 350px;
+    bottom: 100px;
+}
+
+.blog h4
+{
+    color: black;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 200px;
+    left: 350px;
+    bottom: 100px;
+    position: relative;
+}
+
+h1
+{
+    color: black;
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 275px;
+}
+
+.button
+{
+    margin-top: 30px;
+    margin-left: 465px;
+}
+
+.btn
+{
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.btn-one
+{
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn-two
+{
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+    transition: all 0.5s ease-in;
+}
+
+label
+{
+    display: block;
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: relative;
+    bottom: 600px;
+    left: 400px;
+
+}
+
+h2
+{
+    display: block;
+    color: black;
+    text-transform: uppercase;
+    font-size: 60px;
+    position: relative;
+    bottom: 630px;
+    left: 400px;
+}
+
+input, textarea
+{
+    display: block;
+    position: relative;
+    bottom: 20px;
+    left: 100px;
+
+}
+
+.submit
+{
+
+    border: 1px solid black;
+    position: absolute;
+    bottom: 250px;
+    left: 400px;
+    background-color: beige;
+    align-content: center;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+}
+
+.connect h3
+{
+    display: block;
+    color: black;
+    text-transform: uppercase;
+    font-size: 60px;
+    position: relative;
+    bottom: 560px;
+    left: 1100px;
+}
+
+
+
+
+
+
+.btn1
+{
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+    border: 1px solid white;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 425px;
+    left: 1100px;
+    color: white;
+
+}
+
+.btn2
+{
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+    border: 1px solid white;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 425px;
+    left: 1300px;
+    color: white;
+
+}
