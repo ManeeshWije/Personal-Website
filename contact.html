@@ -1,40 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <script src="./main.js"></script>
-    <title>Contact Me</title>
 </head>
-
 <header>
-
-    <div class="row">
-        <div class="logo">
-        <img src="actual_logo.png">
-        </div>
     <ul class="main-nav">
         <li><a href="index.html"> HOME </a></li>
         <li><a href="blog.html"> BLOG </a></li>
-        <li class="active"><a href="contact.html"> CONTACT </a></li>
+        <li><a href="contact.html"> CONTACT </a></li>
+    <div class="button">
+        <a href="https://drive.google.com/file/d/14rTQbFRF2BjLy1T5WoRLEGDwWMjHUudd/view?usp=sharing"> Resume </a>
+        <a href="https://github.com/ManeeshWije"> Github </a>
+    </div>
     </ul>
-
-    </div>
-
-
 </header>
-
 <body>
+    <img class="img-logo" src="actual_logo1.png" alt="logo">
+    <div class="wrapper">
+        <article class="img-info">
+            <h2>Contact Me!</h2>
+            <div class="socialbutton">
+            <a href="https://www.linkedin.com/in/maneesh-wijewardhana-5926741b6/" class="btn1"> Linkedin </a>
 
-    <div class="connect">
-        <h3>Connect With Me!</h3>
-    </div>
-        <div class="socialbutton">
-            <a href="https://www.linkedin.com/in/maneesh-wijewardhana-5926741b6/" class="btn1 btn-one"> Linkedin </a>
-            <a href="https://github.com/ManeeshWije" class="btn2 btn-two"> Github </a>
         </div>
-
-    <h2>Contact Me</h2>
+        </article>
 <form action="https://formspree.io/m.mwije1@gmail.com" method="POST">
 
     <label>
@@ -50,15 +42,16 @@
     <label>
         Message
         <textarea name="message" class="message"></textarea>
-
-
-    </label>
-    <div class="status">
+     <div class="status">
 
     </div>
 
     <button type="submit" class="submit">Send</button>
 
+    </label>
+
+
  </form>
+
 </body>
 </html>
