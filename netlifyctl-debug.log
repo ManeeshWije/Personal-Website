@@ -1,0 +1,739 @@
+[37mDEBU[0m[22 Nov 20 16:29 -0500] PreRun                                        [37marguments[0m=[] [37mcommand[0m=login
+[37mDEBU[0m[22 Nov 20 16:29 -0500] configure debug middleware                   
+[37mDEBU[0m[22 Nov 20 16:29 -0500] configure logging middleware                 
+[37mDEBU[0m[22 Nov 20 16:29 -0500] setup logger middleware: panic               
+[37mDEBU[0m[22 Nov 20 16:29 -0500] configure no auth middleware                 
+[37mDEBU[0m[22 Nov 20 16:29 -0500] setup credentials                             [37mcredentials[0m=0x146b200
+[37mDEBU[0m[22 Nov 20 16:29 -0500] configure client middleware                  
+[37mDEBU[0m[22 Nov 20 16:29 -0500] setup API endpoint                            [37mendpoint[0m="https://api.netlify.com"
+[37mDEBU[0m[22 Nov 20 16:29 -0500] POST /api/v1/oauth/tickets?client_id=5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Content-Length: 0
+Accept: application/json
+Content-Type: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:29 -0500] HTTP/1.1 201 Created
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:29:55 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: 581df60c-6cc5-4c7e-af20-9d9345e7e929
+X-Runtime: 0.018647
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:29 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:29 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:29:58 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: 50027cd1-86ec-476a-a0f1-a2e616e4da8c
+X-Runtime: 0.008985
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:29 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 16:29 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:29 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:30:00 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: d4471bcc-5983-4eef-84db-5f3197575d7d
+X-Runtime: 0.012641
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:29 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 16:30 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:30:02 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: cad5d836-fa02-4e91-8f87-b7646306f0e1
+X-Runtime: 0.013019
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 16:30 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:30:04 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: 2bd2ffc4-c9ad-43ba-a382-43c43337e6d6
+X-Runtime: 0.010926
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 16:30 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:30:06 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: deaf25df-801b-4601-aa66-e93404a28e91
+X-Runtime: 0.011169
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 16:30 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:30:08 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: bb924d49-04e0-46da-9623-e15103e04098
+X-Runtime: 0.010242
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 16:30 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:30:10 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: 60518485-a206-4ec9-9038-18087e0604a3
+X-Runtime: 0.023240
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 16:30 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:30:12 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: 0fb12013-4d05-40ea-9bb9-643aa0b76a9d
+X-Runtime: 0.010102
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 16:30 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:30:14 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: 9bee23f4-ed6b-4670-af4e-afed47307116
+X-Runtime: 0.011575
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 16:30 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:30:16 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: 5853ab44-42ae-4349-82b0-b57d1e00cd79
+X-Runtime: 0.008504
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 16:30 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:30:18 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: 21ea29db-6704-4941-9b10-3e7a94f87e31
+X-Runtime: 0.009133
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 16:30 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:30:20 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: cfea007b-f71d-4d9d-945c-0d45abe87dae
+X-Runtime: 0.010191
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 16:30 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:30:22 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: 6e6f1d04-b447-4e82-a6d8-4a8775f2264c
+X-Runtime: 0.009755
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 16:30 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:30:24 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: 1d2721d5-eb6f-47d1-872b-1545981feef9
+X-Runtime: 0.011471
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 16:30 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:30:26 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: 93aaa7a7-98a3-4b61-87f1-b806449a7939
+X-Runtime: 0.009566
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 16:30 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:30:28 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: ba960990-4d75-4c25-b3ca-6c9d4f786c2f
+X-Runtime: 0.011370
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 16:30 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:30:30 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: e44afa9c-564e-4645-8bec-9400f2f46a11
+X-Runtime: 0.008850
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 16:30 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:30:32 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: 9337694e-c6a8-4457-8b8c-a9e9bab1d2a4
+X-Runtime: 0.012400
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 16:30 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:30:34 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: 76904128-91c1-42c1-b359-603b635e643a
+X-Runtime: 0.008199
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 16:30 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:30:36 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: 32dc2f07-4509-4c15-8e70-617b4b0afad3
+X-Runtime: 0.008978
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 16:30 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:30:38 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: c9e5de37-606b-44fd-94ca-02d03d36ad97
+X-Runtime: 0.013501
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 16:30 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:30:40 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: ca72147d-f15e-4353-80c7-d9b2bd42e15b
+X-Runtime: 0.011147
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 16:30 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:30:42 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: 0c78a90a-29e5-4743-bbd2-4ada9a295a25
+X-Runtime: 0.018021
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 16:30 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:30:44 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: 651e6a85-d23e-4e96-86d4-df12c0196420
+X-Runtime: 0.008928
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 16:30 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Sun, 22 Nov 2020 21:30:46 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: 7948aadc-33c8-43d9-a672-68601f7caf55
+X-Runtime: 0.014831
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 16:30 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[37mDEBU[0m[22 Nov 20 21:35 -0500] GET /api/v1/oauth/tickets/bd7c40acb3a573f7216a6caa98631083 HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[22 Nov 20 21:35 -0500] HTTP/1.1 200 OK
+Content-Length: 178
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Mon, 23 Nov 2020 02:35:46 GMT
+Etag: W/"103d496db7957907f91e68a6c29235e6"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 6252a9a
+X-Request-Id: fd4580cb-d84a-4650-8196-2939f40811ed
+X-Runtime: 0.012311
+
+{"id":"bd7c40acb3a573f7216a6caa98631083","client_id":"5edad8f69d47ae8923d0cf0b4ab95ba1415e67492b5af26ad97f4709160bb31b","created_at":"2020-11-22T21:29:55.846Z","authorized":null}
+ 
+[37mDEBU[0m[22 Nov 20 21:35 -0500] Waiting until deploy ready                    [37mauthorized[0m=false [37mticket_id[0m=bd7c40acb3a573f7216a6caa98631083
+[31mERRO[0m[22 Nov 20 21:35 -0500] command failed                                [31merror[0m="Error: the authorization process timed out"

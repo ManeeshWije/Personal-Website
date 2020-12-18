@@ -1,26 +1,20 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
-
-
-.wrapper{
+.wrapper {
     width: 100%;
 }
 
-.img-logo{
+.img-logo {
     display: inline-block;
     margin-left: 27%;
 }
 
-.img-info{
+.img-info {
     width: 100%;
-
 }
-
-
 
 .img-info h2 {
     padding: 30px 30px 20px;
@@ -46,7 +40,6 @@
     line-height: 24px;
 }
 
-
 .img-info p {
     padding: 0px 30px 20px;
     font-family: "Roboto", sans-serif;
@@ -60,26 +53,27 @@
     border: 5px solid black;
 }
 
-.button  {
-
+.button1 a {
     color: white;
-    text-decoration: none;
-    font-size: 16px;
     background-color: black;
     font-family: "Roboto", sans-serif;
+    position: relative;
+    padding: 11px;
+    bottom: -10px;
+    text-decoration: none;
     text-transform: uppercase;
-    transition: all 0.5s ease-in;
 }
 
 .button a {
+    background-color: black;
     position: relative;
-    padding: 10px;
+    padding: 11px;
     color: white;
     font-family: "Roboto", sans-serif;
-    bottom: -5px;
-
+    bottom: -10px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
-
 
 .main-nav {
     display: flex;
@@ -92,12 +86,9 @@
     padding: 10px 10px 10px 10px;
     list-style: none;
     border: 0.5px solid black;
-
-
 }
 
 .main-nav li a {
-
     text-transform: uppercase;
     color: black;
     text-decoration: none;
@@ -106,8 +97,7 @@
     padding: 10px 10px 10px 10px;
 }
 
-label
-{
+label {
     display: block;
     color: black;
     text-transform: uppercase;
@@ -116,19 +106,15 @@ label
     padding: 0px 30px 20px;
     font-family: "Roboto", sans-serif;
     top: 100px;
-
 }
 
-input, textarea
-{
+input,
+textarea {
     display: block;
     position: relative;
-
 }
 
-
-.submit
-{
+.submit {
     display: inline-block;
     border: 1px solid black;
     position: absolute;
@@ -136,7 +122,6 @@ input, textarea
     font-size: 15px;
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
-
 }
 
 .btn1 {
@@ -153,43 +138,38 @@ input, textarea
     padding: 10px 10px 10px 10px;
 }
 
+@media only screen and (min-width: 768px) {
+    .img-logo {
+        display: block;
+        padding-bottom: 30px;
+        margin-right: 50%;
+    }
 
+    .wrapper {
+        width: 600px;
+        margin: 0 auto;
+    }
 
-@media only screen and (min-width: 768px){
-.img-logo {
-    display: block;
-    padding-bottom: 30px;
-    margin-right: 50%;
- }
+    .img-info h2 {
+        padding: 20px 0px 0px;
+    }
 
-.wrapper{
-    width: 600px;
-    margin: 0 auto;
- }
+    .img-info p {
+        padding: 20px 0px 0px;
+    }
 
- .img-info h2 {
-    padding: 20px 0px 0px;
- }
+    .blog h2 {
+        padding: 20px 0px 0px;
+    }
 
+    .blog h4 {
+        padding: 20px 0px 0px;
+    }
 
-.img-info p {
-    padding: 20px 0px 0px;
-
- }
-
-.blog h2 {
-    padding: 20px 0px 0px;
- }
-
-.blog h4 {
-    padding: 20px 0px 0px;
- }
-
-.btn1 {
-
-
+    .button {
+        padding: 0px 0px 0px;
+    }
+    .button1 {
+        padding: 0px 0px 0px;
+    }
 }
-
-}
-
-
