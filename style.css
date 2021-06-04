@@ -5,6 +5,9 @@
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
 }
+.btn a {
+	text-decoration: none;
+}
 
 body {
 	background-color: #f1f1f1;
@@ -104,6 +107,18 @@ input[type="submit"]:hover {
 	bottom: 0;
 	position: absolute;
 	width: 100%;
+}
+
+.hello-world {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+	text-align: left;
+	padding: 20px;
+}
+code {
+	color: black;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
