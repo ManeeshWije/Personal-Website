@@ -5,6 +5,9 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+h6 {
+  line-height: 30px;
+}
 .btn a {
   text-decoration: none;
 }
@@ -41,10 +44,10 @@ section {
   margin: auto;
 }
 
-h1 {
+/* h1 {
   font-size: 50px;
   word-break: break-all;
-}
+} */
 
 .row {
   margin: 8px -16px;
@@ -117,9 +120,9 @@ input[type="submit"]:hover {
   text-align: left;
   padding: 20px;
 }
-h2 {
+/* h2 {
   font-size: 40px;
-}
+} */
 .card {
   padding: 20px;
 }
