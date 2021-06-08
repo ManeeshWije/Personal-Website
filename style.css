@@ -83,7 +83,7 @@ textarea {
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
-  margin-bottom: 16px;
+  margin-bottom: 50px;
   resize: vertical;
 }
 
@@ -107,8 +107,6 @@ input[type="submit"]:hover {
 }
 
 .footer-class {
-  bottom: 0;
-  position: absolute;
   width: 100%;
 }
 
@@ -120,21 +118,26 @@ input[type="submit"]:hover {
   text-align: left;
   padding: 20px;
 }
-/* h2 {
-  font-size: 40px;
-} */
+
 .card {
   padding: 20px;
 }
-/* pre {
-	position: absolute;
-	left: 0;
-} */
+
+.home-footer {
+  width: 100%;
+}
+.portrait img {
+  max-width: 100%;
+  height: auto;
+}
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
   .column {
     width: 50%;
+  }
+  .content {
+    padding: 20px;
   }
 }
 
@@ -142,5 +145,8 @@ input[type="submit"]:hover {
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+  }
+  .content {
+    padding: 20px;
   }
 }
