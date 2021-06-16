@@ -5,6 +5,139 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+
+@-webkit-keyframes slide-left {
+  0% {
+    transform: translate(100px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@-moz-keyframes slide-left {
+  0% {
+    transform: translate(100px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@-o-keyframes slide-left {
+  0% {
+    transform: translate(100px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: translate(100px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@-webkit-keyframes slide-right {
+  0% {
+    transform: translate(-100px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@-moz-keyframes slide-right {
+  0% {
+    transform: translate(-100px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@-o-keyframes slide-right {
+  0% {
+    transform: translate(-100px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes slide-right {
+  0% {
+    transform: translate(-100px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@-webkit-keyframes slide-up {
+  0% {
+    transform: translate(0px, 100px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@-moz-keyframes slide-up {
+  0% {
+    transform: translate(0px, 100px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@-o-keyframes slide-up {
+  0% {
+    transform: translate(0px, 100px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes slide-up {
+  0% {
+    transform: translate(0px, 100px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 h6 {
   line-height: 30px;
 }
@@ -19,6 +152,8 @@ body {
 .portrait img {
   margin-top: 20px;
   border-style: solid;
+  animation-name: slide-right;
+  animation-duration: 4s;
 }
 .heading {
   display: flex;
@@ -27,6 +162,8 @@ body {
   justify-content: center;
   padding: 30px;
   text-align: center;
+  animation: opacity;
+  animation-duration: 4s;
 }
 section {
   display: flex;
@@ -37,11 +174,18 @@ section {
 
 .main h2 {
   margin-top: 20px;
+  animation-name: slide-left;
+  animation-duration: 4s;
 }
 
 .main {
   max-width: 1000px;
   margin: auto;
+}
+
+.main p {
+  animation-name: opacity;
+  animation-duration: 3s;
 }
 
 /* h1 {
@@ -61,6 +205,8 @@ section {
 .column {
   float: left;
   width: 25%;
+  animation-name: slide-right;
+  animation-duration: 4s;
 }
 
 .row:after {
@@ -72,6 +218,8 @@ section {
 .content {
   background-color: white;
   padding: 20px;
+  animation-name: slide-right;
+  animation-duration: 1s;
 }
 
 input[type="text"],
@@ -104,12 +252,15 @@ input[type="submit"]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  animation-name: slide-right;
+  animation-duration: 1s;
 }
 
 .footer-class {
   width: 100%;
 }
 
+/* blog class lol */
 .hello-world {
   display: flex;
   flex-direction: column;
