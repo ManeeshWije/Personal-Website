@@ -149,6 +149,7 @@ body {
 }
 
 .portrait img {
+  width: 30%;
 	margin-top: 20px;
 	border-style: solid;
 	animation-name: slide-right;
