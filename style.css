@@ -147,10 +147,14 @@ h6 {
 
 body {
   background-color: #f1f1f1;
+  min-height: 100%;
+  position: relative;
 }
 
 #logo {
   border-radius: 50%;
+  width: 5%;
+  margin-right: 15px;
 }
 
 .links {
@@ -177,7 +181,7 @@ body {
 }
 
 .heading p {
-  width: 70%;
+  width: 90%;
 }
 
 section {
@@ -287,8 +291,115 @@ input[type="submit"]:hover {
   width: 100%;
 }
 
+/* coop stuff */
+.sidebar {
+  height: 300vh;
+  left: 0;
+  background-color: lightgray;
+  text-align: center;
+  animation-name: slide-right;
+  animation-duration: 1s;
+  width: 20%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar a {
+  padding: 8px;
+  font-size: 24px;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar a:hover {
+  background-color: white;
+}
+
+.intro {
+  margin-top: 20px;
+  margin-right: 100px;
+  animation-name: slide-left;
+  animation-duration: 1s;
+  width: 69%;
+  height: 150vh;
+}
+
+.intro h3 {
+  align-self: baseline;
+  font-weight: bold;
+}
+
+.intro h5 {
+  line-height: 1.5;
+}
+
+.intro-header {
+  text-align: center;
+}
+
+.intro .dcp-logo,
+.ncr-logo {
+  width: 20%;
+  padding: 4px;
+}
+
+.kingston {
+  width: 50%;
+  float: right;
+  text-align: center;
+}
+
+.kingston img {
+  width: 70%;
+  border-radius: 10px;
+}
+
+.technologies {
+  width: 30%;
+  text-align: center;
+  float: right;
+}
+
+.technologies img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.active-one {
+  background-color: white;
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 105%;
+  background-color: black;
+  height: 1px;
+}
+
+.links a:link {
+  text-decoration: none;
+}
+
+.links a:visited {
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: none;
+}
+
+.links a:active {
+  text-decoration: none;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 810px) {
   .column {
     width: 50%;
   }
@@ -297,6 +408,25 @@ input[type="submit"]:hover {
   }
   .portrait img {
     width: 80%;
+  }
+  #logo {
+    width: 10%;
+  }
+  .intro .dcp-logo, .ncr-logo {
+    width: 70%;
+  }
+  .kingston img {
+    width: 80%;
+  }
+  .sidebar {
+    width: 22%;
+    top: 200;
+    left: 0px;
+    background-color: lightgray;
+    text-align: center;
+    animation-name: slide-right;
+    animation-duration: 1s;
+    height: 400vh;
   }
 }
 
@@ -307,5 +437,37 @@ input[type="submit"]:hover {
   }
   .content {
     padding: 20px;
+  }
+  .navbar {
+    width: 112%;
+  }
+  #logo {
+    width: 10%;
+  }
+  .intro .dcp-logo, .ncr-logo {
+    width: 70%;
+  }
+  .kingston img {
+    width: 80%;
+  }
+  .technologies img {
+    width: 80%;
+  };
+  .sidebar {
+    height: 1599vh;
+    width: 30%;
+    top: 200;
+    left: 0px;
+    background-color: lightgray;
+    text-align: center;
+    animation-name: slide-right;
+    animation-duration: 1s;
+  }
+  .sidebar a {
+    font-size: 10px;
+  }
+  .intro {
+    position: relative;
+    left: 20px;
   }
 }
