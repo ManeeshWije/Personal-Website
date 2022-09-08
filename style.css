@@ -399,6 +399,11 @@ hr {
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (min-width: 1920px) {
+  .sidebar {
+    height: 200vh;
+  }
+}
 @media screen and (max-width: 810px) {
   .column {
     width: 50%;
