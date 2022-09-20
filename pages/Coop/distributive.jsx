@@ -126,10 +126,10 @@ export default function Distributive() {
             src={tech}
             width={350}
             height={350}
-            alt="Technologies Used"
+            alt="technologies-used"
             className="rounded-lg"
           />
-          <figcaption>Kingston, Ontario</figcaption>
+          <figcaption>Technologies Used</figcaption>
         </figure>
         <Typography variant="lead">
           While working at Distributive, I co-developed a Ray-Tracing engine
