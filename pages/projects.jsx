@@ -17,7 +17,7 @@ import personal from "../public/assets/personal-blog.png";
 
 export default function Projects() {
   return (
-    <div className="animate-in fade-in-10 duration-1000 flex flex-col justify-center flex-wrap gap-x-9 gap-y-20 py-12 p-12 md:flex-row">
+    <div className="animate-in fade-in-10 duration-1000 flex flex-col justify-center flex-wrap gap-x-9 gap-y-20 py-12 md:flex-row">
       <Card className="w-96 drop-shadow-md">
         <CardHeader className="relative h-56">
           <Image
