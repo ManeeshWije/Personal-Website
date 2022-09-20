@@ -100,7 +100,7 @@ export default function NavBar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="https://cvws.icloud-content.com/B/AQcUY-gQSdexaFKj1heF0PLlfFaaAXI9WfHZ45ZqGKQRJACM3HVsaDGc/Maneesh-Wijewardhana-Resume.pdf?o=AgxfB9JhNggGGBtV3JiRhuMnG6dQ8j251DgI_5mP7iit&v=1&x=3&a=CAogjmaNTlbAUvXej-CQfD1WYRbN0v5zYmztGL1ltOH-DCkSbxCn4veStTAYp7_TlLUwIgEAUgTlfFaaWgRsaDGcaifKNCiyzlBQ_Di0vqKUKpqlh2V6aZ_DtaAXqFL3F4cHLURWGMlKmD1yJyB8KZKUEhRY24d7NDTlb9FP_DIpkwtkxbB89sRtavqJ2LOPH-rytw&e=1663537831&fl=&r=94a1f77f-2e71-4cd8-9099-45f78bc6375e-1&k=nz18gkeX726uU18Z18Vtww&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=41&s=AvlRFJgASmwGKIlKLJUR9Do8-Sk&cd=i">
+        <a href="https://drive.google.com/file/d/1fN4zLvMdYTaAgHlPTdVLtymQIg-kxyWp/view?usp=sharing">
           Resume
         </a>
       </Typography>
