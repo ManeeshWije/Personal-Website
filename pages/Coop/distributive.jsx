@@ -84,7 +84,7 @@ export default function Distributive() {
             another intern, we created an application that utilized DCP and
             showcased it to our management and peers. This allowed us to be more
             confident working with the technologies and understanding them
-            thoroughly. Overall, I was able to learn a lot about developing
+            thoroughly. I was able to learn a lot about developing
             software and contributed over 30 PR's to the codebase. Overall, I
             worked really hard and despite it being my first work term, I
             developed a lot of new features and fixed certain issues throughout
@@ -101,7 +101,7 @@ export default function Distributive() {
             created a small event on Friday's where developers would get
             together and solve algorithm problems in a certain amount of time in
             order for everyone to sharpen their skills but still have fun at the
-            same time. Overall, I felt like a leader during my work term and it
+            same time. In the end, I felt like a leader during my work term and it
             allowed me to be more confident as a developer.
           </Typography>
           <br />
