@@ -21,6 +21,7 @@ export default function Projects() {
         <CardHeader className="relative h-56">
           <Image
             src="https://media.giphy.com/media/n53ayMhbbkn2QHZSfA/giphy.gif"
+            unoptimized={true}
             alt="solar-gif"
             width={480}
             height={310}
