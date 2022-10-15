@@ -7,7 +7,6 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
-import solarGif from "../public/assets/solarGif.gif";
 import reduction from "../public/assets/reduction.jpg";
 import pokedex from "../public/assets/pokedex.png";
 import tasker from "../public/assets/todo-list.png";
@@ -21,7 +20,7 @@ export default function Projects() {
       <Card className="w-96 drop-shadow-md">
         <CardHeader className="relative h-56">
           <Image
-            src={solarGif}
+            src="https://media.giphy.com/media/n53ayMhbbkn2QHZSfA/giphy.gif"
             alt="solar-gif"
             width={480}
             height={310}
