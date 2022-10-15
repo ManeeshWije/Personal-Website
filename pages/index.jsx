@@ -15,7 +15,7 @@ export default function Home() {
       <Typography variant="h1" className="pb-4 pt-4" color="blue-gray">
         Hi I'm Maneesh.
       </Typography>
-      <Typography variant="lead" className="w-7/12" color="blue-gray">
+      <Typography variant="lead" className="md:w-7/12 sm:w-full" color="blue-gray">
         Currently a student studying Computer Science at the University of
         Guelph. As of now, I'm well versed in languages such as JavaScript,
         Python, Java, and C, but also frameworks such as Node.js, Express.js,
