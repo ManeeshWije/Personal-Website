@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 import {
   Card,
   CardHeader,
@@ -6,36 +6,38 @@ import {
   CardFooter,
   Typography,
   Button,
-} from "@material-tailwind/react";
-import reduction from "../public/assets/reduction.jpg";
-import pokedex from "../public/assets/pokedex.png";
-import tasker from "../public/assets/todo-list.png";
-import gochat from "../public/assets/real-time-chat.png";
-import twitterBot from "../public/assets/twitter_like_bot.png";
-import personal from "../public/assets/personal-blog.png";
-import solar from "../public/assets/solar.png";
-import Footer from "./footer";
+} from '@material-tailwind/react';
+import reduction from '../public/assets/reduction.jpg';
+import pokedex from '../public/assets/pokedex.png';
+import tasker from '../public/assets/todo-list.png';
+import gochat from '../public/assets/real-time-chat.png';
+import twitterBot from '../public/assets/twitter_like_bot.png';
+import personal from '../public/assets/personal-blog.png';
+import solar from '../public/assets/solar.png';
+import mash from '../public/assets/mash.png';
+import ctypetest from '../public/assets/ctypetest.png';
+import Footer from './footer';
 
 export default function Projects() {
   return (
     <>
-      <div className="animate-in fade-in-10 duration-1000 flex flex-col justify-center flex-wrap gap-x-9 gap-y-20 py-12 md:flex-row">
-        <Card className="w-96 drop-shadow-md">
-          <CardHeader className="relative h-56">
+      <div className='animate-in fade-in-10 duration-1000 flex flex-col justify-center flex-wrap gap-x-9 gap-y-20 py-12 md:flex-row'>
+        <Card className='w-96 drop-shadow-md'>
+          <CardHeader className='relative h-56'>
             <Image
               src={solar}
               unoptimized={true}
-              alt="solar-gif"
+              alt='solar-gif'
               width={480}
               height={310}
-              className="h-full w-full rounded-lg"
+              className='h-full w-full rounded-lg'
             />
           </CardHeader>
-          <CardBody className="text-center">
-            <Typography variant="h5" color="blue-gray" className="mb-2">
+          <CardBody className='text-center'>
+            <Typography variant='h5' color='blue-gray' className='mb-2'>
               Solar
             </Typography>
-            <Typography color="blue-gray">
+            <Typography color='blue-gray'>
               This application roughly simulates our solar system with relative
               values that can be scaled and also displays important information
               about each planet. The purpose of it was to familiarize myself
@@ -47,42 +49,42 @@ export default function Projects() {
               them.
             </Typography>
           </CardBody>
-          <CardFooter className="flex flex-row absolute bottom-0">
+          <CardFooter className='flex flex-row absolute bottom-0'>
             <Typography
-              variant="paragraph"
-              color="black"
-              className="mt-64 pt-24"
+              variant='paragraph'
+              color='black'
+              className='mt-64 pt-24'
             >
-              <Button size="sm">
-                <a href="https://maneeshwije.github.io/Solar/">View</a>
+              <Button size='sm'>
+                <a href='https://maneeshwije.github.io/Solar/'>View</a>
               </Button>
             </Typography>
             <Typography
-              variant="paragraph"
-              color="black"
-              className="ml-52 mt-64 pt-24"
+              variant='paragraph'
+              color='black'
+              className='ml-52 mt-64 pt-24'
             >
-              <Button size="sm">
-                <a href="https://github.com/ManeeshWije/Solar">Github</a>
+              <Button size='sm'>
+                <a href='https://github.com/ManeeshWije/Solar'>Github</a>
               </Button>
             </Typography>
           </CardFooter>
         </Card>
-        <Card className="w-96 drop-shadow-md">
-          <CardHeader className="relative h-56">
+        <Card className='w-96 drop-shadow-md'>
+          <CardHeader className='relative h-56'>
             <Image
               src={reduction}
               width={1280}
               height={810}
-              alt="reduction"
-              className="h-full w-full rounded-lg"
+              alt='reduction'
+              className='h-full w-full rounded-lg'
             />
           </CardHeader>
-          <CardBody className="text-center p-8">
-            <Typography color="blue-gray" variant="h5" className="mb-2">
+          <CardBody className='text-center p-8'>
+            <Typography color='blue-gray' variant='h5' className='mb-2'>
               Reduction
             </Typography>
-            <Typography color="blue-gray">
+            <Typography color='blue-gray'>
               A minimal new tab chrome extension built with JavaScript and
               HTML/CSS. I learned a lot about API's and how to send requests to
               them since I had to retrieve information from the Unsplash API,
@@ -93,44 +95,44 @@ export default function Projects() {
               easily make more extensions in the future.
             </Typography>
           </CardBody>
-          <CardFooter className="flex flex-row absolute bottom-0">
+          <CardFooter className='flex flex-row absolute bottom-0'>
             <Typography
-              variant="paragraph"
-              color="black"
-              className="mt-64 pt-24"
+              variant='paragraph'
+              color='black'
+              className='mt-64 pt-24'
             >
-              <Button size="sm">
-                <a href="https://chrome.google.com/webstore/detail/reduction/jphgbbmchajohadnmdifemndmbjfpjdj">
+              <Button size='sm'>
+                <a href='https://chrome.google.com/webstore/detail/reduction/jphgbbmchajohadnmdifemndmbjfpjdj'>
                   View
                 </a>
               </Button>
             </Typography>
             <Typography
-              variant="paragraph"
-              color="black"
-              className="ml-52 mt-64 pt-24"
+              variant='paragraph'
+              color='black'
+              className='ml-52 mt-64 pt-24'
             >
-              <Button size="sm">
-                <a href="https://github.com/ManeeshWije/Reduction">Github</a>
+              <Button size='sm'>
+                <a href='https://github.com/ManeeshWije/Reduction'>Github</a>
               </Button>
             </Typography>
           </CardFooter>
         </Card>
-        <Card className="w-96 drop-shadow-md">
-          <CardHeader className="relative h-56">
+        <Card className='w-96 drop-shadow-md'>
+          <CardHeader className='relative h-56'>
             <Image
               src={pokedex}
               width={1182}
               height={750}
-              alt="pokedex"
-              className="h-full w-full rounded-lg"
+              alt='pokedex'
+              className='h-full w-full rounded-lg'
             />
           </CardHeader>
-          <CardBody className="text-center py-8">
-            <Typography color="blue-gray" variant="h5" className="mb-2">
+          <CardBody className='text-center py-8'>
+            <Typography color='blue-gray' variant='h5' className='mb-2'>
               Pokedex
             </Typography>
-            <Typography color="blue-gray">
+            <Typography color='blue-gray'>
               This is a MERN application that utilizes the PokeAPI in order to
               get random Pokemon to save into my database. Using my database, I
               show crucial stats about each Pokemon and allow users to add a
@@ -141,42 +143,42 @@ export default function Projects() {
               and how to create routes in React for different pages.
             </Typography>
           </CardBody>
-          <CardFooter className="flex flex-row absolute bottom-0">
+          <CardFooter className='flex flex-row absolute bottom-0'>
             <Typography
-              variant="paragraph"
-              color="black"
-              className="mt-64 pt-24"
+              variant='paragraph'
+              color='black'
+              className='mt-64 pt-24'
             >
-              <Button size="sm">
-                <a href="https://maneeshs-pokedex.netlify.app">View</a>
+              <Button size='sm'>
+                <a href='https://maneeshs-pokedex.netlify.app'>View</a>
               </Button>
             </Typography>
             <Typography
-              variant="paragraph"
-              color="black"
-              className="mt-64 pt-24 ml-52"
+              variant='paragraph'
+              color='black'
+              className='mt-64 pt-24 ml-52'
             >
-              <Button size="sm">
-                <a href="https://github.com/ManeeshWije/pokedex">Github</a>
+              <Button size='sm'>
+                <a href='https://github.com/ManeeshWije/pokedex'>Github</a>
               </Button>
             </Typography>
           </CardFooter>
         </Card>
-        <Card className="w-96 drop-shadow-md">
-          <CardHeader className="relative h-56">
+        <Card className='w-96 drop-shadow-md'>
+          <CardHeader className='relative h-56'>
             <Image
               src={tasker}
               width={821}
               height={948}
-              alt="tasker"
-              className="h-full w-full rounded-lg"
+              alt='tasker'
+              className='h-full w-full rounded-lg'
             />
           </CardHeader>
-          <CardBody className="text-center py-8">
-            <Typography color="blue-gray" variant="h5" className="mb-2">
+          <CardBody className='text-center py-8'>
+            <Typography color='blue-gray' variant='h5' className='mb-2'>
               Tasker
             </Typography>
-            <Typography color="blue-gray">
+            <Typography color='blue-gray'>
               This todo list app was built using the MERN stack and allowed me
               to work with a database and react for the first time. Throughout
               this experience, I learned a lot about how databases worked and
@@ -186,42 +188,42 @@ export default function Projects() {
               front-end to call onto my API.
             </Typography>
           </CardBody>
-          <CardFooter className="flex flex-row absolute bottom-0">
+          <CardFooter className='flex flex-row absolute bottom-0'>
             <Typography
-              variant="paragraph"
-              color="black"
-              className="mt-64 pt-28"
+              variant='paragraph'
+              color='black'
+              className='mt-64 pt-28'
             >
-              <Button size="sm">
-                <a href="https://maneeshs-tasker.netlify.app/">View</a>
+              <Button size='sm'>
+                <a href='https://maneeshs-tasker.netlify.app/'>View</a>
               </Button>
             </Typography>
             <Typography
-              variant="paragraph"
-              color="black"
-              className="mt-64 pt-28 ml-52"
+              variant='paragraph'
+              color='black'
+              className='mt-64 pt-28 ml-52'
             >
-              <Button size="sm">
-                <a href="https://github.com/ManeeshWije/Tasker">Github</a>
+              <Button size='sm'>
+                <a href='https://github.com/ManeeshWije/Tasker'>Github</a>
               </Button>
             </Typography>
           </CardFooter>
         </Card>
-        <Card className="w-96 drop-shadow-md">
-          <CardHeader className="relative h-56">
+        <Card className='w-96 drop-shadow-md'>
+          <CardHeader className='relative h-56'>
             <Image
               src={gochat}
               width={1235}
               height={900}
-              alt="GoChat"
-              className="h-full w-full rounded-lg"
+              alt='GoChat'
+              className='h-full w-full rounded-lg'
             />
           </CardHeader>
-          <CardBody className="text-center py-8">
-            <Typography color="blue-gray" variant="h5" className="mb-2">
+          <CardBody className='text-center py-8'>
+            <Typography color='blue-gray' variant='h5' className='mb-2'>
               GoChat
             </Typography>
-            <Typography color="blue-gray">
+            <Typography color='blue-gray'>
               This real-time chat app was built using tools/languages such as
               Socket.io, Express.js, Node.js, HTML, and some simple styling
               using CSS. This project allowed me to learn more about how
@@ -231,42 +233,42 @@ export default function Projects() {
               could properly send requests to my server.
             </Typography>
           </CardBody>
-          <CardFooter className="flex flex-row absolute bottom-0">
+          <CardFooter className='flex flex-row absolute bottom-0'>
             <Typography
-              variant="paragraph"
-              color="black"
-              className="mt-64 pt-24"
+              variant='paragraph'
+              color='black'
+              className='mt-64 pt-24'
             >
-              <Button size="sm">
-                <a href="https://gochat.up.railway.app/">View</a>
+              <Button size='sm'>
+                <a href='https://gochat.up.railway.app/'>View</a>
               </Button>
             </Typography>
             <Typography
-              variant="paragraph"
-              color="black"
-              className="mt-64 pt-24 ml-52"
+              variant='paragraph'
+              color='black'
+              className='mt-64 pt-24 ml-52'
             >
-              <Button size="sm">
-                <a href="https://github.com/ManeeshWije/GoChat">Github</a>
+              <Button size='sm'>
+                <a href='https://github.com/ManeeshWije/GoChat'>Github</a>
               </Button>
             </Typography>
           </CardFooter>
         </Card>
-        <Card className="w-96 drop-shadow-md">
-          <CardHeader className="relative h-56">
+        <Card className='w-96 drop-shadow-md'>
+          <CardHeader className='relative h-56'>
             <Image
               src={twitterBot}
               width={1920}
               height={1250}
-              alt="twitter-like-bot"
-              className="h-full w-full rounded-lg"
+              alt='twitter-like-bot'
+              className='h-full w-full rounded-lg'
             />
           </CardHeader>
-          <CardBody className="text-center py-8">
-            <Typography color="blue-gray" variant="h5" className="mb-2">
+          <CardBody className='text-center py-8'>
+            <Typography color='blue-gray' variant='h5' className='mb-2'>
               Twitter Like Bot
             </Typography>
-            <Typography color="blue-gray">
+            <Typography color='blue-gray'>
               This bot is built with Python and more specifically, uses the
               library Selenium WebDriver which is the backbone of all the
               automation. The bot will open your browser, log into your Twitter
@@ -277,41 +279,103 @@ export default function Projects() {
               Python.
             </Typography>
           </CardBody>
-          <CardFooter className="flex flex-row absolute bottom-0">
-            <Typography variant="paragraph" color="black" className="mt-80">
-              <Button size="sm">
-                <a href="https://github.com/ManeeshWije/twitterLikeBot">
+          <CardFooter className='flex flex-row absolute bottom-0'>
+            <Typography variant='paragraph' color='black' className='mt-80'>
+              <Button size='sm'>
+                <a href='https://github.com/ManeeshWije/twitterLikeBot'>
                   Github
                 </a>
               </Button>
             </Typography>
           </CardFooter>
         </Card>
-        <Card className="w-96 drop-shadow-md">
-          <CardHeader className="relative h-56">
+        <Card className='w-96 drop-shadow-md'>
+          <CardHeader className='relative h-56'>
+            <Image
+              src={mash}
+              width={1614}
+              height={950}
+              alt='mash-project'
+              className='h-full w-full rounded-lg'
+            />
+          </CardHeader>
+          <CardBody className='text-center py-8'>
+            <Typography color='blue-gray' variant='h5' className='mb-2'>
+              mash
+            </Typography>
+            <Typography color='blue-gray'>
+              A simple shell that has functionalities for common unix commands
+              such as 'ls', 'cd', 'mkdir', etc. I also implemented the pipe
+              command and input/output redirection using {'<'} and {'>'}. Built
+              with C, I learned a lot about threads, forking, common signals on
+              certain events, and overall how processes work within a program.
+            </Typography>
+          </CardBody>
+          <CardFooter className='flex flex-row absolute bottom-0'>
+            <Typography variant='paragraph' color='black' className='mt-44'>
+              <Button size='sm'>
+                <a href='https://github.com/ManeeshWije/mash'>Github</a>
+              </Button>
+            </Typography>
+          </CardFooter>
+        </Card>
+        <Card className='w-96 drop-shadow-md'>
+          <CardHeader className='relative h-56'>
+            <Image
+              src={ctypetest}
+              width={1614}
+              height={950}
+              alt='ctypetest'
+              className='h-full w-full rounded-lg'
+            />
+          </CardHeader>
+          <CardBody className='text-center py-8'>
+            <Typography color='blue-gray' variant='h5' className='mb-2'>
+              ctypetest
+            </Typography>
+            <Typography color='blue-gray'>
+              A cli typing test program that allows the user to enter a text
+              file and calculates the users words per minute once the prompt has
+              been typed. I utilized the built in clock functions to record time
+              and calculate words per minute. Stats include the gross WPM, net
+              WPM, as well as overall accuracy. This was a fun project to do
+              after a long time of not writing any C code and allowed me to
+              familiarize myself with it once again.
+            </Typography>
+          </CardBody>
+          <CardFooter className='flex flex-row absolute bottom-0'>
+            <Typography variant='paragraph' color='black' className='mt-44'>
+              <Button size='sm'>
+                <a href='https://github.com/ManeeshWije/mash'>Github</a>
+              </Button>
+            </Typography>
+          </CardFooter>
+        </Card>
+        <Card className='w-96 drop-shadow-md'>
+          <CardHeader className='relative h-56'>
             <Image
               src={personal}
               width={1614}
               height={950}
-              alt="personal-website"
-              className="h-full w-full rounded-lg"
+              alt='personal-website'
+              className='h-full w-full rounded-lg'
             />
           </CardHeader>
-          <CardBody className="text-center py-8">
-            <Typography color="blue-gray" variant="h5" className="mb-2">
+          <CardBody className='text-center py-8'>
+            <Typography color='blue-gray' variant='h5' className='mb-2'>
               Personal Website
             </Typography>
-            <Typography color="blue-gray">
+            <Typography color='blue-gray'>
               This very website is something that is always in progress. Built
               with Next.js and Tailwind, I am able to document my progress in
               the industry as well as share some of my projects at the same
               time.
             </Typography>
           </CardBody>
-          <CardFooter className="flex flex-row absolute bottom-0">
-            <Typography variant="paragraph" color="black" className="mt-44">
-              <Button size="sm">
-                <a href="https://github.com/ManeeshWije/Personal-Website">
+          <CardFooter className='flex flex-row absolute bottom-0'>
+            <Typography variant='paragraph' color='black' className='mt-44'>
+              <Button size='sm'>
+                <a href='https://github.com/ManeeshWije/Personal-Website'>
                   Github
                 </a>
               </Button>
