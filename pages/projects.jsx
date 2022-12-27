@@ -7,7 +7,7 @@ import {
   Typography,
   Button,
 } from '@material-tailwind/react';
-import reduction from '../public/assets/reduction.jpg';
+import reduction from '../public/assets/reduction.png';
 import pokedex from '../public/assets/pokedex.png';
 import tasker from '../public/assets/todo-list.png';
 import gochat from '../public/assets/real-time-chat.png';
@@ -21,7 +21,13 @@ import Footer from './footer';
 export default function Projects() {
   return (
     <>
-      <div className='animate-in fade-in-10 duration-1000 flex flex-col justify-center flex-wrap gap-x-9 gap-y-20 py-12 md:flex-row'>
+      <div className='animate-in fade-in-10 duration-1000 text-center p-8'>
+        <Typography>
+          I'm always learning new technologies/frameworks and here are
+          examples of where I try to apply that knowledge.
+        </Typography>
+      </div>
+      <div className='animate-in fade-in-10 duration-1000 flex flex-col justify-center flex-wrap gap-x-9 gap-y-20 py-8 md:flex-row'>
         <Card className='w-96 drop-shadow-md'>
           <CardHeader className='relative h-56'>
             <Image
@@ -33,7 +39,7 @@ export default function Projects() {
               className='h-full w-full rounded-lg'
             />
           </CardHeader>
-          <CardBody className='text-center'>
+          <CardBody className='text-center py-8'>
             <Typography variant='h5' color='blue-gray' className='mb-2'>
               Solar
             </Typography>
@@ -74,25 +80,24 @@ export default function Projects() {
           <CardHeader className='relative h-56'>
             <Image
               src={reduction}
-              width={1280}
-              height={810}
+              width={1920}
+              height={1250}
               alt='reduction'
               className='h-full w-full rounded-lg'
             />
           </CardHeader>
-          <CardBody className='text-center p-8'>
+          <CardBody className='text-center py-8'>
             <Typography color='blue-gray' variant='h5' className='mb-2'>
               Reduction
             </Typography>
             <Typography color='blue-gray'>
               A minimal new tab chrome extension built with JavaScript and
-              HTML/CSS. I learned a lot about API's and how to send requests to
-              them since I had to retrieve information from the Unsplash API,
-              Quotable API and Darksky API. I was able to parse all of this
-              information in a pleasing manner for the user as well. This was
-              also my first time making any chrome extension and so working with
-              this environment was a good experience for me and will allow me to
-              easily make more extensions in the future.
+              HTML/CSS. I learned a lot about how API's are structured and used
+              as I had to retrieve information from multiple API's I was able to
+              parse all of the needed information and display it in a prettified
+              manner for the user. This was also my first time making any chrome
+              extension so working in this environment was a good experience for
+              me and will allow me to easily make more extensions in the future.
             </Typography>
           </CardBody>
           <CardFooter className='flex flex-row absolute bottom-0'>
@@ -134,13 +139,11 @@ export default function Projects() {
             </Typography>
             <Typography color='blue-gray'>
               This is a MERN application that utilizes the PokeAPI in order to
-              get random Pokemon to save into my database. Using my database, I
-              show crucial stats about each Pokemon and allow users to add a
-              Pokemon to their Pokedex. In the Pokedex section, users are able
-              to see all of their selected Pokemon in a concise manner and also
-              have the ability to remove Pokemon. Building this app allowed me
-              to learn more about saving data from an API into my own database
-              and how to create routes in React for different pages.
+              get random Pokemon to save into a Pokedex based on their stats. In
+              the Pokedex section, users are able to see all of their selected
+              Pokemon in a concise manner and also have the ability to remove
+              Pokemon. Building this app allowed me to learn more about REST
+              apis, non-relational databases, and how to create routes in React.
             </Typography>
           </CardBody>
           <CardFooter className='flex flex-row absolute bottom-0'>
@@ -168,8 +171,8 @@ export default function Projects() {
           <CardHeader className='relative h-56'>
             <Image
               src={tasker}
-              width={821}
-              height={948}
+              width={1100}
+              height={1225}
               alt='tasker'
               className='h-full w-full rounded-lg'
             />
@@ -180,12 +183,12 @@ export default function Projects() {
             </Typography>
             <Typography color='blue-gray'>
               This todo list app was built using the MERN stack and allowed me
-              to work with a database and react for the first time. Throughout
-              this experience, I learned a lot about how databases worked and
-              how to set up an express server that can manipulate my dataset. I
-              store all of my todo's in a MongoDB database and created endpoints
-              to perform most CRUD capabilities all while developing a clean
-              front-end to call onto my API.
+              to work with a database and React.js for the first time.
+              Throughout this experience, I learned a lot about how
+              non-relational databases worked and how to set up an Express.js
+              server with CRUD operations that can manipulate my data. I was
+              also able to develop a clean and user-friendly front-end interface
+              that would interact with my server.
             </Typography>
           </CardBody>
           <CardFooter className='flex flex-row absolute bottom-0'>
@@ -213,8 +216,8 @@ export default function Projects() {
           <CardHeader className='relative h-56'>
             <Image
               src={gochat}
-              width={1235}
-              height={900}
+              width={1920}
+              height={1225}
               alt='GoChat'
               className='h-full w-full rounded-lg'
             />
@@ -227,10 +230,11 @@ export default function Projects() {
               This real-time chat app was built using tools/languages such as
               Socket.io, Express.js, Node.js, HTML, and some simple styling
               using CSS. This project allowed me to learn more about how
-              websockets truly work for real time capabilities. Along with this,
-              I was able to deploy this onto Render as a web app so other users
-              can join in. In order to do this, I had to learn Express.js so I
-              could properly send requests to my server.
+              websockets worked for real time capabilities. Along with this, I
+              was able to deploy this onto Railway as a web app so other users
+              can join into the chat room. In order to do this, I had to learn
+              Express.js for the first time so I could properly send requests to
+              my server.
             </Typography>
           </CardBody>
           <CardFooter className='flex flex-row absolute bottom-0'>
@@ -293,8 +297,8 @@ export default function Projects() {
           <CardHeader className='relative h-56'>
             <Image
               src={mash}
-              width={1614}
-              height={950}
+              width={1920}
+              height={1250}
               alt='mash-project'
               className='h-full w-full rounded-lg'
             />
@@ -323,8 +327,8 @@ export default function Projects() {
           <CardHeader className='relative h-56'>
             <Image
               src={ctypetest}
-              width={1614}
-              height={950}
+              width={1920}
+              height={1250}
               alt='ctypetest'
               className='h-full w-full rounded-lg'
             />

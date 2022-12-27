@@ -24,11 +24,11 @@ export default function Home() {
         >
           Currently a student studying Computer Science at the University of
           Guelph. As of now, I'm well versed in languages such as JavaScript,
-          Python, Java, and C, but also frameworks such as Node.js, Express.js,
-          React.js, and many more. To see what I'm currently working on and
-          other past projects, you can check out my projects page or my Github.
-          Have a question? Contact me through email, LinkedIn, or the form on
-          this website.
+          Python, Java, and C, but also frameworks/libraries such as Node.js,
+          Express.js, React.js, and many more. To see what I'm currently working
+          on and other past projects, you can check out my projects page or my
+          Github. Have a question? Contact me through email, LinkedIn, or the
+          form on this website.
         </Typography>
       </div>
       <Footer />
