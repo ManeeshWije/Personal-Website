@@ -9,7 +9,7 @@ import {
 } from '@material-tailwind/react';
 import reduction from '../public/assets/reduction.png';
 import pokedex from '../public/assets/pokedex.png';
-import tasker from '../public/assets/todo-list.png';
+import tasker from '../public/assets/tasker.png';
 import gochat from '../public/assets/real-time-chat.png';
 import twitterBot from '../public/assets/twitter_like_bot.png';
 import personal from '../public/assets/personal-blog.png';
@@ -39,7 +39,7 @@ export default function Projects() {
               className='h-full w-full rounded-lg'
             />
           </CardHeader>
-          <CardBody className='text-center py-8'>
+          <CardBody className='text-center py-14'>
             <Typography variant='h5' color='blue-gray' className='mb-2'>
               Solar
             </Typography>
@@ -86,14 +86,14 @@ export default function Projects() {
               className='h-full w-full rounded-lg'
             />
           </CardHeader>
-          <CardBody className='text-center py-8'>
+          <CardBody className='text-center py-14'>
             <Typography color='blue-gray' variant='h5' className='mb-2'>
               Reduction
             </Typography>
             <Typography color='blue-gray'>
               A minimal new tab chrome extension built with JavaScript and
               HTML/CSS. I learned a lot about how API's are structured and used
-              as I had to retrieve information from multiple API's I was able to
+              as I had to retrieve information from multiple API's. I was able to
               parse all of the needed information and display it in a prettified
               manner for the user. This was also my first time making any chrome
               extension so working in this environment was a good experience for
@@ -133,7 +133,7 @@ export default function Projects() {
               className='h-full w-full rounded-lg'
             />
           </CardHeader>
-          <CardBody className='text-center py-8'>
+          <CardBody className='text-center py-14'>
             <Typography color='blue-gray' variant='h5' className='mb-2'>
               Pokedex
             </Typography>
@@ -171,13 +171,13 @@ export default function Projects() {
           <CardHeader className='relative h-56'>
             <Image
               src={tasker}
-              width={1100}
-              height={1225}
+              width={1000}
+              height={750}
               alt='tasker'
               className='h-full w-full rounded-lg'
             />
           </CardHeader>
-          <CardBody className='text-center py-8'>
+          <CardBody className='text-center py-14'>
             <Typography color='blue-gray' variant='h5' className='mb-2'>
               Tasker
             </Typography>
@@ -222,7 +222,7 @@ export default function Projects() {
               className='h-full w-full rounded-lg'
             />
           </CardHeader>
-          <CardBody className='text-center py-8'>
+          <CardBody className='text-center py-14'>
             <Typography color='blue-gray' variant='h5' className='mb-2'>
               GoChat
             </Typography>
@@ -268,7 +268,7 @@ export default function Projects() {
               className='h-full w-full rounded-lg'
             />
           </CardHeader>
-          <CardBody className='text-center py-8'>
+          <CardBody className='text-center py-14'>
             <Typography color='blue-gray' variant='h5' className='mb-2'>
               Twitter Like Bot
             </Typography>
@@ -303,7 +303,7 @@ export default function Projects() {
               className='h-full w-full rounded-lg'
             />
           </CardHeader>
-          <CardBody className='text-center py-8'>
+          <CardBody className='text-center py-14'>
             <Typography color='blue-gray' variant='h5' className='mb-2'>
               mash
             </Typography>
@@ -333,7 +333,7 @@ export default function Projects() {
               className='h-full w-full rounded-lg'
             />
           </CardHeader>
-          <CardBody className='text-center py-8'>
+          <CardBody className='text-center py-14'>
             <Typography color='blue-gray' variant='h5' className='mb-2'>
               ctypetest
             </Typography>
@@ -365,7 +365,7 @@ export default function Projects() {
               className='h-full w-full rounded-lg'
             />
           </CardHeader>
-          <CardBody className='text-center py-8'>
+          <CardBody className='text-center py-14'>
             <Typography color='blue-gray' variant='h5' className='mb-2'>
               Personal Website
             </Typography>
