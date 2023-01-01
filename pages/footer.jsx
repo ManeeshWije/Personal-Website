@@ -19,7 +19,7 @@ export default function Footer() {
       </div>
       <footer className='bg-white flex flex-row justify-center relative bottom-0 left-0 p-4 rounded-lg shadow dark:bg-gray-800'>
         <span className='text-sm text-gray-500 sm:text-center dark:text-gray-400'>
-          © 2022{' '}
+          © 2023{' '}
           <a href='https://www.wijeproject.com' className='hover:underline'>
             wijeproject™
           </a>
