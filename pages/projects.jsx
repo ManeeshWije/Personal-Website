@@ -16,7 +16,6 @@ import personal from '../public/assets/personal-blog.png';
 import solar from '../public/assets/solar.png';
 import mash from '../public/assets/mash.png';
 import ctypetest from '../public/assets/ctypetest.png';
-import Footer from './footer';
 
 export default function Projects() {
   return (
@@ -387,7 +386,6 @@ export default function Projects() {
           </CardFooter>
         </Card>
       </div>
-      <Footer />
     </>
   );
 }

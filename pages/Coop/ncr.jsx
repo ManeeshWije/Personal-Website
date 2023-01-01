@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { Typography } from '@material-tailwind/react';
 import ncr from '../../public/assets/ncr-logo.png';
-import Footer from '../footer';
 
 export default function Ncr() {
   return (
@@ -18,7 +17,6 @@ export default function Ncr() {
         </section>
         <div className='m-72'></div>
       </div>
-      <Footer />
     </>
   );
 }

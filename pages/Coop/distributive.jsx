@@ -3,7 +3,6 @@ import { Typography } from '@material-tailwind/react';
 import distributive from '../../public/assets/distributive.png';
 import kingston from '../../public/assets/kingston.jpg';
 import tech from '../../public/assets/tech.png';
-import Footer from '../footer';
 
 export default function Distributive() {
   return (
@@ -191,7 +190,6 @@ export default function Distributive() {
         </section>
       </div>
       <div className='pt-4'></div>
-      <Footer />
     </>
   );
 }

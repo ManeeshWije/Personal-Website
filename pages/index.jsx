@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { Typography } from '@material-tailwind/react';
 import portrait from '../public/assets/portrait0.jpeg';
-import Footer from './footer';
 
 export default function Home() {
   return (
@@ -31,7 +30,6 @@ export default function Home() {
           form on this website.
         </Typography>
       </div>
-      <Footer />
     </>
   );
 }

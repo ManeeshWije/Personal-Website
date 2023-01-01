@@ -1,4 +1,3 @@
-import Footer from './footer';
 export default function Contact() {
   return (
     <>
@@ -82,7 +81,7 @@ export default function Contact() {
           </button>
         </form>
       </div>
-      <Footer />
+      <div className='py-4'></div>
     </>
   );
 }
