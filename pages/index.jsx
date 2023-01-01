@@ -21,13 +21,10 @@ export default function Home() {
           className='md:w-7/12 sm:w-full'
           color='blue-gray'
         >
-          Currently a student studying Computer Science at the University of
-          Guelph. As of now, I'm well versed in languages such as JavaScript,
-          Python, Java, and C, but also frameworks/libraries such as Node.js,
-          Express.js, React.js, and many more. To see what I'm currently working
-          on and other past projects, you can check out my projects page or my
-          Github. Have a question? Contact me through email, LinkedIn, or the
-          form on this website.
+          A Computer Science student studying at the University of Guelph who is
+          passionate about developing software and always curious to learn new
+          technologies in the industry. Have a question? Contact me through
+          LinkedIn, email, or the form on this website.
         </Typography>
       </div>
     </>

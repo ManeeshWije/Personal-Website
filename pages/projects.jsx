@@ -22,8 +22,8 @@ export default function Projects() {
     <>
       <div className='animate-in fade-in-10 duration-1000 text-center p-8'>
         <Typography>
-          I'm always learning new technologies/frameworks and here are
-          examples of where I try to apply that knowledge.
+          I'm always learning new technologies/frameworks and these are some
+          examples of where I apply that knowledge.
         </Typography>
       </div>
       <div className='animate-in fade-in-10 duration-1000 flex flex-col justify-center flex-wrap gap-x-9 gap-y-20 py-8 md:flex-row'>
@@ -92,7 +92,7 @@ export default function Projects() {
             <Typography color='blue-gray'>
               A minimal new tab chrome extension built with JavaScript and
               HTML/CSS. I learned a lot about how API's are structured and used
-              as I had to retrieve information from multiple API's. I was able to
+              as I had to retrieve information from many of them. I was able to
               parse all of the needed information and display it in a prettified
               manner for the user. This was also my first time making any chrome
               extension so working in this environment was a good experience for
@@ -229,11 +229,10 @@ export default function Projects() {
               This real-time chat app was built using tools/languages such as
               Socket.io, Express.js, Node.js, HTML, and some simple styling
               using CSS. This project allowed me to learn more about how
-              websockets worked for real time capabilities. Along with this, I
-              was able to deploy this onto Railway as a web app so other users
-              can join into the chat room. In order to do this, I had to learn
-              Express.js for the first time so I could properly send requests to
-              my server.
+              websockets worked for real time capabilities. I was also able to
+              deploy this onto Railway as a web app so other users can join into
+              the chat room. In order to do this, I had to learn Express.js for
+              the first time so I could properly send requests to my server.
             </Typography>
           </CardBody>
           <CardFooter className='flex flex-row absolute bottom-0'>
