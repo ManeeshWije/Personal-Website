@@ -94,18 +94,28 @@ export default function NavBar() {
           </a>
         </Link>
       </Typography>
+      <Typography
+        as='li'
+        variant='paragraph'
+        color='blue-gray'
+        className='p-1 font-normal'
+      >
+        <Link href='https://drive.google.com/file/d/1fN4zLvMdYTaAgHlPTdVLtymQIg-kxyWp/view?usp=share_link'>
+          Resume
+        </Link>
+      </Typography>
     </ul>
   );
 
   return (
-    <Navbar className='animate-in duration-700 slide-in-from-top-10 border-gray-400 drop-shadow-2xl bg-white mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4'>
+    <Navbar className='animate-in duration-1000 slide-in-from-top-24 fade-in-5 border-gray-400 drop-shadow-2xl bg-white mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4'>
       <div className='container mx-auto flex items-center justify-between text-blue-gray-900'>
         <a href='https://www.wijeproject.com'>
           <Image
             alt='maneesh-logo'
             src={logo}
-            width={75}
-            height={75}
+            width={50}
+            height={50}
             className='rounded-full'
           />
         </a>

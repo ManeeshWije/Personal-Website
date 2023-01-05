@@ -20,22 +20,22 @@ import ctypetest from '../public/assets/ctypetest.png';
 export default function Projects() {
   return (
     <>
-      <div className='animate-in fade-in-10 duration-1000 text-center p-8'>
+      <div className='overflow-hidden animate-in fade-in-5 duration-2s text-center p-8'>
         <Typography>
           I'm always learning new technologies/frameworks and these are some
           examples of where I apply that knowledge.
         </Typography>
       </div>
-      <div className='animate-in fade-in-10 duration-1000 flex flex-col justify-center flex-wrap gap-x-9 gap-y-20 py-8 md:flex-row'>
-        <Card className='w-96 drop-shadow-md'>
+      <div className='overflow-hidden animate-in fade-in-5 slide-in-from-right-40 duration-2s flex flex-col justify-center flex-wrap gap-x-9 gap-y-20 py-8 md:flex-row'>
+        <Card className='w-96'>
           <CardHeader className='relative h-56'>
             <Image
               src={solar}
-              unoptimized={true}
-              alt='solar-gif'
-              width={480}
-              height={310}
+              width={1920}
+              height={1250}
+              alt='solar'
               className='h-full w-full rounded-lg'
+              priority
             />
           </CardHeader>
           <CardBody className='text-center py-14'>
@@ -60,7 +60,7 @@ export default function Projects() {
               color='black'
               className='mt-64 pt-24'
             >
-              <Button size='sm'>
+              <Button color='blue-gray' size='sm'>
                 <a href='https://maneeshwije.github.io/Solar/'>View</a>
               </Button>
             </Typography>
@@ -69,13 +69,13 @@ export default function Projects() {
               color='black'
               className='ml-52 mt-64 pt-24'
             >
-              <Button size='sm'>
+              <Button color='blue-gray' size='sm'>
                 <a href='https://github.com/ManeeshWije/Solar'>Github</a>
               </Button>
             </Typography>
           </CardFooter>
         </Card>
-        <Card className='w-96 drop-shadow-md'>
+        <Card className='w-96'>
           <CardHeader className='relative h-56'>
             <Image
               src={reduction}
@@ -83,6 +83,7 @@ export default function Projects() {
               height={1250}
               alt='reduction'
               className='h-full w-full rounded-lg'
+              priority
             />
           </CardHeader>
           <CardBody className='text-center py-14'>
@@ -105,7 +106,7 @@ export default function Projects() {
               color='black'
               className='mt-64 pt-24'
             >
-              <Button size='sm'>
+              <Button color='blue-gray' size='sm'>
                 <a href='https://chrome.google.com/webstore/detail/reduction/jphgbbmchajohadnmdifemndmbjfpjdj'>
                   View
                 </a>
@@ -116,13 +117,13 @@ export default function Projects() {
               color='black'
               className='ml-52 mt-64 pt-24'
             >
-              <Button size='sm'>
+              <Button color='blue-gray' size='sm'>
                 <a href='https://github.com/ManeeshWije/Reduction'>Github</a>
               </Button>
             </Typography>
           </CardFooter>
         </Card>
-        <Card className='w-96 drop-shadow-md'>
+        <Card className='w-96'>
           <CardHeader className='relative h-56'>
             <Image
               src={pokedex}
@@ -130,6 +131,7 @@ export default function Projects() {
               height={750}
               alt='pokedex'
               className='h-full w-full rounded-lg'
+              priority
             />
           </CardHeader>
           <CardBody className='text-center py-14'>
@@ -142,7 +144,7 @@ export default function Projects() {
               the Pokedex section, users are able to see all of their selected
               Pokemon in a concise manner and also have the ability to remove
               Pokemon. Building this app allowed me to learn more about REST
-              apis, non-relational databases, and how to create routes in React.
+              API's, non-relational databases, and how to create routes in React.
             </Typography>
           </CardBody>
           <CardFooter className='flex flex-row absolute bottom-0'>
@@ -151,7 +153,7 @@ export default function Projects() {
               color='black'
               className='mt-64 pt-24'
             >
-              <Button size='sm'>
+              <Button color='blue-gray' size='sm'>
                 <a href='https://maneeshs-pokedex.netlify.app'>View</a>
               </Button>
             </Typography>
@@ -160,13 +162,13 @@ export default function Projects() {
               color='black'
               className='mt-64 pt-24 ml-52'
             >
-              <Button size='sm'>
+              <Button color='blue-gray' size='sm'>
                 <a href='https://github.com/ManeeshWije/pokedex'>Github</a>
               </Button>
             </Typography>
           </CardFooter>
         </Card>
-        <Card className='w-96 drop-shadow-md'>
+        <Card className='w-96'>
           <CardHeader className='relative h-56'>
             <Image
               src={tasker}
@@ -174,6 +176,7 @@ export default function Projects() {
               height={750}
               alt='tasker'
               className='h-full w-full rounded-lg'
+              priority
             />
           </CardHeader>
           <CardBody className='text-center py-14'>
@@ -181,8 +184,8 @@ export default function Projects() {
               Tasker
             </Typography>
             <Typography color='blue-gray'>
-              This todo list app was built using the MERN stack and allowed me
-              to work with a database and React.js for the first time.
+              A todo list app that was built using the MERN stack which allowed
+              me to work with a database and React.js for the first time.
               Throughout this experience, I learned a lot about how
               non-relational databases worked and how to set up an Express.js
               server with CRUD operations that can manipulate my data. I was
@@ -196,7 +199,7 @@ export default function Projects() {
               color='black'
               className='mt-64 pt-28'
             >
-              <Button size='sm'>
+              <Button color='blue-gray' size='sm'>
                 <a href='https://maneeshs-tasker.netlify.app/'>View</a>
               </Button>
             </Typography>
@@ -205,13 +208,13 @@ export default function Projects() {
               color='black'
               className='mt-64 pt-28 ml-52'
             >
-              <Button size='sm'>
+              <Button color='blue-gray' size='sm'>
                 <a href='https://github.com/ManeeshWije/Tasker'>Github</a>
               </Button>
             </Typography>
           </CardFooter>
         </Card>
-        <Card className='w-96 drop-shadow-md'>
+        <Card className='w-96'>
           <CardHeader className='relative h-56'>
             <Image
               src={gochat}
@@ -219,6 +222,7 @@ export default function Projects() {
               height={1225}
               alt='GoChat'
               className='h-full w-full rounded-lg'
+              priority
             />
           </CardHeader>
           <CardBody className='text-center py-14'>
@@ -226,9 +230,9 @@ export default function Projects() {
               GoChat
             </Typography>
             <Typography color='blue-gray'>
-              This real-time chat app was built using tools/languages such as
-              Socket.io, Express.js, Node.js, HTML, and some simple styling
-              using CSS. This project allowed me to learn more about how
+              This is a real-time chat app that was built using tools/languages
+              such as Socket.io, Express.js, Node.js, HTML, and some simple
+              styling using CSS. This project allowed me to learn more about how
               websockets worked for real time capabilities. I was also able to
               deploy this onto Railway as a web app so other users can join into
               the chat room. In order to do this, I had to learn Express.js for
@@ -241,7 +245,7 @@ export default function Projects() {
               color='black'
               className='mt-64 pt-24'
             >
-              <Button size='sm'>
+              <Button color='blue-gray' size='sm'>
                 <a href='https://gochat.up.railway.app/'>View</a>
               </Button>
             </Typography>
@@ -250,13 +254,13 @@ export default function Projects() {
               color='black'
               className='mt-64 pt-24 ml-52'
             >
-              <Button size='sm'>
+              <Button color='blue-gray' size='sm'>
                 <a href='https://github.com/ManeeshWije/GoChat'>Github</a>
               </Button>
             </Typography>
           </CardFooter>
         </Card>
-        <Card className='w-96 drop-shadow-md'>
+        <Card className='w-96'>
           <CardHeader className='relative h-56'>
             <Image
               src={twitterBot}
@@ -264,6 +268,7 @@ export default function Projects() {
               height={1250}
               alt='twitter-like-bot'
               className='h-full w-full rounded-lg'
+              priority
             />
           </CardHeader>
           <CardBody className='text-center py-14'>
@@ -283,7 +288,7 @@ export default function Projects() {
           </CardBody>
           <CardFooter className='flex flex-row absolute bottom-0'>
             <Typography variant='paragraph' color='black' className='mt-80'>
-              <Button size='sm'>
+              <Button color='blue-gray' size='sm'>
                 <a href='https://github.com/ManeeshWije/twitterLikeBot'>
                   Github
                 </a>
@@ -291,7 +296,7 @@ export default function Projects() {
             </Typography>
           </CardFooter>
         </Card>
-        <Card className='w-96 drop-shadow-md'>
+        <Card className='w-96'>
           <CardHeader className='relative h-56'>
             <Image
               src={mash}
@@ -299,6 +304,7 @@ export default function Projects() {
               height={1250}
               alt='mash-project'
               className='h-full w-full rounded-lg'
+              priority
             />
           </CardHeader>
           <CardBody className='text-center py-14'>
@@ -315,13 +321,13 @@ export default function Projects() {
           </CardBody>
           <CardFooter className='flex flex-row absolute bottom-0'>
             <Typography variant='paragraph' color='black' className='mt-44'>
-              <Button size='sm'>
+              <Button color='blue-gray' size='sm'>
                 <a href='https://github.com/ManeeshWije/mash'>Github</a>
               </Button>
             </Typography>
           </CardFooter>
         </Card>
-        <Card className='w-96 drop-shadow-md'>
+        <Card className='w-96'>
           <CardHeader className='relative h-56'>
             <Image
               src={ctypetest}
@@ -329,6 +335,7 @@ export default function Projects() {
               height={1250}
               alt='ctypetest'
               className='h-full w-full rounded-lg'
+              priority
             />
           </CardHeader>
           <CardBody className='text-center py-14'>
@@ -347,13 +354,13 @@ export default function Projects() {
           </CardBody>
           <CardFooter className='flex flex-row absolute bottom-0'>
             <Typography variant='paragraph' color='black' className='mt-44'>
-              <Button size='sm'>
+              <Button color='blue-gray' size='sm'>
                 <a href='https://github.com/ManeeshWije/mash'>Github</a>
               </Button>
             </Typography>
           </CardFooter>
         </Card>
-        <Card className='w-96 drop-shadow-md'>
+        <Card className='w-96'>
           <CardHeader className='relative h-56'>
             <Image
               src={personal}
@@ -361,6 +368,7 @@ export default function Projects() {
               height={950}
               alt='personal-website'
               className='h-full w-full rounded-lg'
+              priority
             />
           </CardHeader>
           <CardBody className='text-center py-14'>
@@ -376,7 +384,7 @@ export default function Projects() {
           </CardBody>
           <CardFooter className='flex flex-row absolute bottom-0'>
             <Typography variant='paragraph' color='black' className='mt-44'>
-              <Button size='sm'>
+              <Button color='blue-gray' size='sm'>
                 <a href='https://github.com/ManeeshWije/Personal-Website'>
                   Github
                 </a>
