@@ -55,8 +55,52 @@ a {
   transform: rotate(45deg);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 420px) {
+  #icon-container #icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #icon-container #tech {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #hobby {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+  }
+
+  #yosemite {
+    width: 100%;
+  }
+
+  #tech,
+  #tech-title,
   #icons {
-    width: 70px;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -2s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
+
+  #hobby,
+  #hobby-title,
+  #yosemite {
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -0.4s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  #yosemite {
+    width: 58%;
   }
 }

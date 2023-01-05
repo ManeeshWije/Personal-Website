@@ -62,7 +62,10 @@ export default function Home() {
       >
         Here are the technologies I work with 👨🏽‍💻
       </Typography>
-      <div className='overflow-hidden w-full p-4 text-center justify-center items-center content-center flex flex-row flex-wrap'>
+      <div
+        id='icon-container'
+        className='overflow-hidden w-full p-4 text-center justify-center items-center content-center flex flex-row flex-wrap'
+      >
         <div
           id='icons'
           className='animate-in slide-in-from-right-full duration-700 w-6/12 p-4 flex flex-row flex-wrap float-right justify-center items-center gap-5'
@@ -230,7 +233,7 @@ export default function Home() {
           Whether it's a crag in the area or the local gym, I participate in all
           of it, however, as of now, I mainly focus on bouldering. I've been
           bouldering for around 6 months now and some PB's of mine are V5 (6C+)
-          indoors with outdoors coming soon{' '}
+          indoors with outdoors coming soon.{' '}
           <b>
             (gyms are relative so grades don't really paint the full picture).
           </b>{' '}
@@ -239,15 +242,16 @@ export default function Home() {
         </Typography>
         <div
           id='yosemite'
-          className='animate-in slide-in-from-left-full duration-500 w-5/12 p-4 flex flex-row flex-wrap float-right justify-center items-center '
+          className='animate-in slide-in-from-left-full duration-500 w-5/12 p-4 flex flex-row flex-wrap float-right justify-center items-center'
         >
           <Image
             src={yosemite}
             alt='yosemite-boulder'
             width={600}
             height={400}
-            className='rounded-md'
+            className='max-w-full h-auto rounded-md'
           />
+          <p>Midnight Lightning, Yosemite</p>
         </div>
       </div>
     </>

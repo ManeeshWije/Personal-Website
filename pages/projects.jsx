@@ -26,7 +26,7 @@ export default function Projects() {
           examples of where I apply that knowledge.
         </Typography>
       </div>
-      <div className='overflow-hidden animate-in fade-in-5 slide-in-from-right-40 duration-2s flex flex-col justify-center flex-wrap gap-x-9 gap-y-20 py-8 md:flex-row'>
+      <div className='overflow-hidden animate-in fade-in-5 slide-in-from-right-40 duration-2s flex flex-col justify-center flex-wrap gap-x-9 gap-y-20 py-8 md:flex-row phone:ml-4'>
         <Card className='w-96'>
           <CardHeader className='relative h-56'>
             <Image
@@ -144,7 +144,8 @@ export default function Projects() {
               the Pokedex section, users are able to see all of their selected
               Pokemon in a concise manner and also have the ability to remove
               Pokemon. Building this app allowed me to learn more about REST
-              API's, non-relational databases, and how to create routes in React.
+              API's, non-relational databases, and how to create routes in
+              React.
             </Typography>
           </CardBody>
           <CardFooter className='flex flex-row absolute bottom-0'>

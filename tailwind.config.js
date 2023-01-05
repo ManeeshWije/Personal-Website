@@ -9,7 +9,7 @@ module.exports = withMT({
         '2s': '2s',
       },
       screens: {
-        phone: '500px',
+        phone: '400px',
       },
     },
   },
