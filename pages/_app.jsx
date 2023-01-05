@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
     <ThemeProvider>
       <Navbar />
       <Component {...pageProps} />
-      <Footer/>
+      <Footer />
     </ThemeProvider>
   );
 }

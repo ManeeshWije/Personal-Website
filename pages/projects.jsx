@@ -20,13 +20,13 @@ import ctypetest from '../public/assets/ctypetest.png';
 export default function Projects() {
   return (
     <>
-      <div className='overflow-hidden animate-in fade-in-5 duration-2s text-center p-8'>
+      <div className='animate-in fade-in-5 duration-2s text-center p-8'>
         <Typography>
           I'm always learning new technologies/frameworks and these are some
           examples of where I apply that knowledge.
         </Typography>
       </div>
-      <div className='overflow-hidden animate-in fade-in-5 slide-in-from-right-40 duration-2s flex flex-col justify-center flex-wrap gap-x-9 gap-y-20 py-8 md:flex-row phone:ml-4'>
+      <div className='animate-in fade-in-5 duration-2s flex flex-col justify-center flex-wrap gap-x-9 gap-y-20 py-8 md:flex-row phone:ml-4'>
         <Card className='w-96'>
           <CardHeader className='relative h-56'>
             <Image
