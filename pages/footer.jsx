@@ -17,7 +17,7 @@ export default function Footer() {
           <Icon width={40} icon='mdi:linkedin' />
         </a>
       </div>
-      <footer className='bg-white flex flex-row justify-center relative bottom-0 left-0 p-4 rounded-lg shadow dark:bg-gray-800'>
+      <footer className='bg-white flex flex-row justify-center relative bottom-0 left-0 p-4 rounded-lg drop-shadow-lg dark:bg-gray-800'>
         <span className='text-sm text-gray-500 sm:text-center dark:text-gray-400'>
           Made with ❤️ by Maneesh
         </span>

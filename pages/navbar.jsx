@@ -108,7 +108,7 @@ export default function NavBar() {
   );
 
   return (
-    <Navbar className='animate-in duration-1000 slide-in-from-top-24 fade-in-5 border-gray-400 drop-shadow-2xl bg-white mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4'>
+    <Navbar shadow={false} className='animate-in duration-1000 slide-in-from-top-24 fade-in-5 border-gray-400 drop-shadow-2xl bg-white mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4'>
       <div className='container mx-auto flex items-center justify-between text-blue-gray-900'>
         <a href='https://www.wijeproject.com'>
           <Image
