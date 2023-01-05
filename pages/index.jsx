@@ -30,7 +30,6 @@ export default function Home() {
             width={600}
             height={450}
             className='rounded-md'
-            priority
           />
         </div>
         <div className='text-center flex justify-center flex-col items-center animate-in duration-2s slide-in-from-left-80'>
