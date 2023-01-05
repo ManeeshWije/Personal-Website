@@ -4,13 +4,16 @@ export default function Footer() {
   return (
     <div>
       <div className='py-4 gap-9 flex flex-row items-center justify-center'>
-        <a href='mailto:m.mwije1@gmail.com'>
+        <a aria-label='email me' href='mailto:m.mwije1@gmail.com'>
           <Icon width={40} icon='carbon:email' />
         </a>
-        <a href='https://github.com/ManeeshWije'>
+        <a aria-label='github' href='https://github.com/ManeeshWije'>
           <Icon width={40} icon='mdi:github' />
         </a>
-        <a href='https://www.linkedin.com/in/maneeshwije/'>
+        <a
+          aria-label='linkedin'
+          href='https://www.linkedin.com/in/maneeshwije/'
+        >
           <Icon width={40} icon='mdi:linkedin' />
         </a>
       </div>

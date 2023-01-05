@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Head from 'next/head';
 import { Icon } from '@iconify/react';
 import { Typography, Button, Tooltip } from '@material-tailwind/react';
 import portrait from '../public/assets/portrait0.jpeg';
@@ -21,6 +22,15 @@ export default function Home() {
   }, []);
   return (
     <>
+      <Head>
+        <title>Maneesh Wijewardhana</title>
+        <meta charSet='utf-8' />
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta
+          name='description'
+          content='A personal portfolio website for Maneesh Wijewardhana that contains his projects, work experience, and more'
+        />
+      </Head>
       <div id='main'></div>
       <div className='text-center flex p-12 flex-col justify-center items-center'>
         <div className='animate-in duration-2s slide-in-from-left-full fade-in-5'>
