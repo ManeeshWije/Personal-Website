@@ -45,9 +45,10 @@ export default function Home() {
           <Image
             alt='maneesh-portrait'
             src={portrait}
-            width={600}
-            height={450}
+            width='600px'
+            height='450px'
             className='rounded-md'
+            priority
           />
         </div>
         <div className='text-center flex justify-center flex-col items-center animate-in duration-2s slide-in-from-left-80'>
@@ -66,7 +67,11 @@ export default function Home() {
         </div>
         <div className='py-8 animate-in duration-2s slide-in-from-right-full'>
           <Link href='/contact'>
-            <Button color='blue-gray' className='animate-pulse duration-2s'>
+            <Button
+              aria-label='contact-me'
+              color='blue-gray'
+              className='animate-pulse duration-2s'
+            >
               Contact Me
             </Button>
           </Link>
@@ -264,9 +269,10 @@ export default function Home() {
           <Image
             src={yosemite}
             alt='yosemite-boulder'
-            width={600}
-            height={400}
+            width='600px'
+            height='400px'
             className='max-w-full h-auto rounded-md'
+            priority
           />
           <p>Midnight Lightning, Yosemite</p>
         </div>
