@@ -67,7 +67,7 @@ export default function Projects() {
             <Typography
               variant='paragraph'
               color='black'
-              className='ml-52 mt-64 pt-24'
+              className='ml-[200px] mt-64 pt-24'
             >
               <Button color='blue-gray' size='sm'>
                 <a href='https://github.com/ManeeshWije/Solar'>Github</a>
@@ -115,7 +115,7 @@ export default function Projects() {
             <Typography
               variant='paragraph'
               color='black'
-              className='ml-52 mt-64 pt-24'
+              className='ml-[200px] mt-64 pt-24'
             >
               <Button color='blue-gray' size='sm'>
                 <a href='https://github.com/ManeeshWije/Reduction'>Github</a>
@@ -161,7 +161,7 @@ export default function Projects() {
             <Typography
               variant='paragraph'
               color='black'
-              className='mt-64 pt-24 ml-52'
+              className='mt-64 pt-24 ml-[200px]'
             >
               <Button color='blue-gray' size='sm'>
                 <a href='https://github.com/ManeeshWije/pokedex'>Github</a>
@@ -207,7 +207,7 @@ export default function Projects() {
             <Typography
               variant='paragraph'
               color='black'
-              className='mt-64 pt-28 ml-52'
+              className='mt-64 pt-28 ml-[200px]'
             >
               <Button color='blue-gray' size='sm'>
                 <a href='https://github.com/ManeeshWije/Tasker'>Github</a>
@@ -253,7 +253,7 @@ export default function Projects() {
             <Typography
               variant='paragraph'
               color='black'
-              className='mt-64 pt-24 ml-52'
+              className='mt-64 pt-24 ml-[200px]'
             >
               <Button color='blue-gray' size='sm'>
                 <a href='https://github.com/ManeeshWije/GoChat'>Github</a>
