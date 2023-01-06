@@ -57,6 +57,7 @@ a {
 }
 
 #card {
+  border: 0.1px solid transparent;
   border-image: url(../public/assets/shadow.png) 10 / 10px;
 }
 
