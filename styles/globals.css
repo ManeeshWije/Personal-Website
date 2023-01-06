@@ -61,9 +61,9 @@ a {
 }
 
 @media screen and (max-width: 420px) {
-  #card {
-    margin-left: 6px;
-  }
+  /* #card { */
+  /*   margin-left: 6px; */
+  /* } */
 
   #icon-container #icons {
     display: flex;
