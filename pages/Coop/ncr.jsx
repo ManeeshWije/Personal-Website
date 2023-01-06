@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { Typography } from '@material-tailwind/react';
-import ncr from '../../public/assets/ncr-logo.png';
-import waterloo from '../../public/assets/waterloo.jpg';
-import techNcr from '../../public/assets/tech-ncr.png';
+import ncr from '/public/assets/ncr-logo.png';
+import waterloo from '/public/assets/waterloo.jpg';
+import techNcr from '/public/assets/tech-ncr.png';
 
 export default function Ncr() {
   return (

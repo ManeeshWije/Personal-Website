@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
-import logo from '../public/assets/logo.png';
+import logo from '/public/assets/logo.png';
 import {
   Navbar,
   MobileNav,

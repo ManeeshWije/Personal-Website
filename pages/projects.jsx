@@ -7,15 +7,15 @@ import {
   Typography,
   Button,
 } from '@material-tailwind/react';
-import reduction from '../public/assets/reduction.png';
-import pokedex from '../public/assets/pokedex.png';
-import tasker from '../public/assets/tasker.png';
-import gochat from '../public/assets/real-time-chat.png';
-import twitterBot from '../public/assets/twitter_like_bot.png';
-import personal from '../public/assets/personal-blog.png';
-import solar from '../public/assets/solar.png';
-import mash from '../public/assets/mash.png';
-import ctypetest from '../public/assets/ctypetest.png';
+import reduction from '/public/assets/reduction.png';
+import pokedex from '/public/assets/pokedex.png';
+import tasker from '/public/assets/tasker.png';
+import gochat from '/public/assets/real-time-chat.png';
+import twitterBot from '/public/assets/twitter_like_bot.png';
+import personal from '/public/assets/personal-blog.png';
+import solar from '/public/assets/solar.png';
+import mash from '/public/assets/mash.png';
+import ctypetest from '/public/assets/ctypetest.png';
 
 export default function Projects() {
   return (

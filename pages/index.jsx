@@ -3,8 +3,8 @@ import Link from 'next/link';
 import Head from 'next/head';
 import { Icon } from '@iconify/react';
 import { Typography, Button, Tooltip } from '@material-tailwind/react';
-import portrait from '../public/assets/portrait0.jpeg';
-import yosemite from '../public/assets/yosemite.jpg';
+import portrait from '/public/assets/portrait0.jpeg';
+import yosemite from '/public/assets/yosemite.jpg';
 import { useEffect } from 'react';
 
 export default function Home() {
@@ -35,7 +35,11 @@ export default function Home() {
           content='A personal portfolio website for Maneesh Wijewardhana that contains his projects, work experience, and more'
         />
       </Head>
-      <div onClick={() => scrollHalf()} id='main' className='cursor-pointer'></div>
+      <div
+        onClick={() => scrollHalf()}
+        id='main'
+        className='cursor-pointer'
+      ></div>
       <div className='text-center flex p-12 flex-col justify-center items-center'>
         <div className='animate-in duration-2s slide-in-from-left-full fade-in-5'>
           <Image
