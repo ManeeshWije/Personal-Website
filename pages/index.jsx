@@ -8,6 +8,10 @@ import yosemite from '../public/assets/yosemite.jpg';
 import { useEffect } from 'react';
 
 export default function Home() {
+  const scrollHalf = () => {
+    window.scrollTo(0, document.body.scrollHeight / 2);
+  };
+
   useEffect(() => {
     window.addEventListener(
       'scroll',
@@ -31,7 +35,7 @@ export default function Home() {
           content='A personal portfolio website for Maneesh Wijewardhana that contains his projects, work experience, and more'
         />
       </Head>
-      <div id='main'></div>
+      <div onClick={() => scrollHalf()} id='main' className='cursor-pointer'></div>
       <div className='text-center flex p-12 flex-col justify-center items-center'>
         <div className='animate-in duration-2s slide-in-from-left-full fade-in-5'>
           <Image

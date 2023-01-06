@@ -28,6 +28,9 @@ export default function Distributive() {
               className='rounded-lg'
             />
             <figcaption>Kingston, Ontario</figcaption>
+            <a className='text-blue-400' href='https://www.cbc.ca/news/canada/ottawa/kingston-council-density-design-intensification-1.5364836'>
+              Credits
+            </a>
           </figure>
           <Typography variant='lead'>
             Distributive focuses on next generation distributed computing and
