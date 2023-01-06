@@ -48,6 +48,7 @@ export default function Home() {
             width={600}
             height={450}
             className='rounded-md'
+            unoptimized={true}
             priority={true}
           />
         </div>
@@ -269,6 +270,7 @@ export default function Home() {
             height={400}
             className='max-w-full h-auto rounded-md'
             priority={true}
+            unoptimized={true}
           />
           <p>Midnight Lightning, Yosemite</p>
         </div>
