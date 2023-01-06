@@ -128,7 +128,7 @@ export default function Distributive() {
               src={tech}
               width={350}
               height={350}
-              alt='technologies-used'
+              alt='technologies-used-distributive'
               className='rounded-lg'
             />
             <figcaption>Technologies Used</figcaption>
