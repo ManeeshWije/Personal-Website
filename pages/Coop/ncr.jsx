@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { Typography } from '@material-tailwind/react';
 import ncr from '../../public/assets/ncr-logo.png';
 import waterloo from '../../public/assets/waterloo.jpg';
+import techNcr from '../../public/assets/tech-ncr.png';
 
 export default function Ncr() {
   return (
@@ -12,7 +13,20 @@ export default function Ncr() {
         </a>
         <i>Fall 2022</i>
         <section>
-          <Typography variant='h3'>Introduction</Typography>
+          <Typography variant='h3'>About the Company</Typography>
+          <Typography variant='lead'>
+            NCR is a technology company based in Atlanta, Georgia, United States
+            that started off in the financial space with hardware devices. They
+            invented the electronic cash register, self checkout machine, and
+            many more. They also work in the software space and develop
+            applications for banks and other institutions in order to offer
+            users digital banking services. Due to the variety of solutions NCR
+            provides, there is a high chance that you yourself have come across
+            a piece of hardware of software developed by NCR. This could be the
+            self checkout machine at your local grocery store, or the app you
+            use to access your banking information.
+          </Typography>
+          <div className='pt-8'></div>
           <figure className='p-4 float-right text-center'>
             <Image
               src={waterloo}
@@ -31,42 +45,54 @@ export default function Ncr() {
               </a>
             </figcaption>
           </figure>
-          <Typography variant='lead'>NCR is</Typography>
-          <div className='pt-8'></div>
-          <Typography variant='h3'>Goals</Typography>
+          <Typography variant='h3'>My Role</Typography>
           <Typography variant='lead'>
-            I created 3 goals this work term that revolved around leadership as
-            well as problem solving. These included:
+            I'm honoured to have worked at NCR as a Software Developer Intern in
+            their Waterloo office for my second Co-op term. As a part of my
+            role, I was working with the Channel Services Platform team with a
+            primary focus in backend Java development. I was responsible for
+            developing new API endpoints that perform certain functionalities
+            based on specific business requirements, developing and contributing
+            to existing internal micro-services or building new ones,
+            contributing to quarterly planning meetings, and overall, work
+            effeciently in an Agile environment.
           </Typography>
+          <div className='pt-8'></div>
+          <Typography variant='h3'>Goals/Reflections</Typography>
+          <Typography variant='lead'>
+            I created 3 goals this term that revolved around learning new
+            technologies, communication, and overall quality of work. These
+            included:
+          </Typography>
+          <br />
           <ul>
             <Typography variant='lead' as='li'>
-              <b>1.</b> Learn how the in's and out's of the DCP (Distributed
-              Compute Protocol) functions which would allow me to debug,
-              implement features, and solve problems easier. This will result in
-              knowing exactly where something went wrong and figure out the
-              solutions with minimal guidance when it comes to
-              discovering/fixing bugs, writing tests, etc.
+              <b>1.</b> Get a deeper understanding of backend Java
+              applications/microservices to successfully contribute to a feature
+              design and implementation. This also ties into learning about the
+              technologies I have never used before such as Docker, Jenkins,
+              Kubernetes, and more. Being able to learn hands-on with these
+              tools will allow me to expand my development toolbox as well as be
+              more comfortable using them in the future.
             </Typography>
             <br />
             <Typography variant='lead' as='li'>
-              <b>2.</b> Work on my leadership skills even while being a new
-              intern without any previous experience. I want to be able to act
-              as a leader and show the existing developers that I can be counted
-              on when it comes to working on the codebase. I also want to make
-              sure that I can answer most of the questions that the other
-              interns might have which will allow them to grow/mature while I
-              do.
+              <b>2.</b> Improve my communication skills whether that be orally
+              in daily scrum meetings, and sprint plannings, but also written in
+              emails, design documents, and comments. This will allow other
+              developers to always be on the same page as me and will decrease
+              the amount of clarification needed for work that I have done or
+              plan to do. Both types of communication skills are important to
+              have as a developer to efficiently produce quality work. do.
             </Typography>
             <br />
             <Typography variant='lead' as='li'>
-              <b>3.</b> Expand my knowledge of the JavaScript language as well
-              as Node.js as these two are the backbones of the DCP technology. I
-              want to build off of the knowledge I already know and start to
-              focus on more advanced topics of JavaScript that the DCP uses in
-              their codebase. By doing this, I'm not only broadening my personal
-              understanding of the languages and specific techniques used with
-              them, but I'm also benefiting the companies I may work for in the
-              future that use the same technologies.
+              <b>3.</b> Strike a balance between quality/quantity when it comes
+              to the work I do. I want to be able to produce high-quality
+              designs and implementations with the least errors possible but
+              also be able to produce more of them to have more deliverables.
+              This means I will have to find an efficient workflow that can
+              balance those two ideas properly.
             </Typography>
           </ul>
           <div className='pt-4'></div>
@@ -75,43 +101,55 @@ export default function Ncr() {
           </Typography>
           <ul>
             <Typography variant='lead' as='li'>
-              <b>1.</b> I was able to contribute heavily to the codebase even
-              with sparse experience working in a bigger codebase like this.
-              Along with another intern, we created an application that utilized
-              DCP and showcased it to our management and peers. This allowed us
-              to be more confident working with the technologies and
-              understanding them thoroughly. I was able to learn a lot about
-              developing software and contributed over 30 PR's to the codebase.
-              Overall, I worked really hard and despite it being my first work
-              term, I developed a lot of new features and fixed certain issues
-              throughout the codebase.
+              <b>1.</b> I achieved this goal as I was able to work with tools
+              such as Kubernetes, Docker, and Jenkins on a daily basis without
+              needing guidance from other developers. At the start of my work
+              term, I had never worked with these technologies but I knew they
+              were important to know in order to grow as a developer. By the end
+              of my term, I felt as though I had a good understanding of them
+              and I'm comfortable using them when developing at NCR. At the
+              beginning of my term, I needed guidance from other developers on
+              how these tools worked and how they played an integral role in the
+              development life cycle at NCR. However, by the end of my term, I
+              was using them when bug fixing, developing new features, and
+              rarely had questions during the process. Also, to fast-track my
+              understanding, I researched these technologies in my own time
+              which benefited me not only in the workplace but also in my own
+              projects.
             </Typography>
             <br />
             <Typography variant='lead' as='li'>
-              <b>2.</b> I was able to onboard within a day and because of that,
-              assist my peers with their on-boarding or any other questions they
-              had. I also started contributing to the codebase early on which
-              allowed me to grasp an understanding of proper coding conventions
-              and the whole PR process. I passed this knowledge down to the
-              other interns when it was their time to do the same. To showcase
-              more leadership, I even created a small event on Friday's where
-              developers would get together and solve algorithm problems in a
-              certain amount of time in order for everyone to sharpen their
-              skills but still have fun at the same time. In the end, I felt
-              like a leader during my work term and it allowed me to be more
-              confident as a developer.
+              <b>2.</b> I achieved this goal because throughout my time at NCR,
+              I made sure that I conveyed the ideas and comments that I had in a
+              concise yet detailed manner. For example, in our daily scrum
+              meetings, I always explained exactly what things I accomplished,
+              things I needed help with as well as what I was going to do to get
+              help. This alleviated any questions that my other teammates might
+              have which saved time in the process. I also contributed to our
+              sprint retrospectives by writing down key points on what the team
+              did well, what we could improve on, etc. This carried over to our
+              sprint planning meetings as well where I was able to ask
+              meaningful questions about new features and show managers that I
+              had a clear understanding of the task at hand. Overall, my oral
+              and written communication skills improved and allowed me to
+              produce quality work.
             </Typography>
             <br />
             <Typography variant='lead' as='li'>
-              <b>3.</b> I achieved this goal because since our codebase was
-              written in JavaScript, I forced myself to learn it thoroughly even
-              though I had previous experience with the language. I had even
-              learned new things about it throughout my time developing. I also
-              learned how to properly use a debugger and what it means to have
-              one at all times whether you are writing software or debugging it.
-              I heavily used these techniques and did not have experience using
-              them prior. Overall, the way I fixed bugs and wrote software saw
-              an increase in efficiency after working at this company.
+              <b>3.</b> I achieved this goal by completing all my assigned
+              features/tasks and even more during each sprint. With these tasks,
+              I created PR's that needed minimal review comments and changes.
+              This showed my teammates that I produced quality work with minimal
+              to no errors and that greatly increased the development speed of
+              the team. Another resulting factor from striking this balance
+              between quality and quantity was being able to help other
+              teammates with their work. I learned very quickly how the
+              development cycle works at NCR and quickly adapted to it. Whether
+              this is coding standards, merge processes, or design
+              methodologies, I felt comfortable in all of these parts. Overall,
+              I always delivered my features, took the initiative to help
+              others, and made sure the work I submitted held the utmost quality
+              that I was able to produce.
             </Typography>
           </ul>
         </section>
@@ -120,67 +158,57 @@ export default function Ncr() {
           <Typography variant='h3'>Highlights</Typography>
           <figure className='p-4 float-right text-center'>
             <Image
-              src=''
+              src={techNcr}
               width={350}
               height={350}
-              alt='technologies-used'
+              alt='technologies-used-ncr'
               className='rounded-lg'
             />
             <figcaption>Technologies Used</figcaption>
           </figure>
           <Typography variant='lead'>
-            While working at Distributive, I co-developed a Ray-Tracing engine
-            that utilized DCP and was able to get a working product showcased in
-            front of my peers and supervisor. I also implemented new database
-            functionalities as well as implemented a new compute cluster
-            mechanism. This would allow further growth for the company and have
-            multiple computers on different compute groups to do work. I also
-            did some front-end UI work in React.js for the company's new portal
-            page. Looking back, I was able to learn more about Node.js, SQL,
-            compute clusters, React.js, and much more. I also learned a lot of
-            new skills that I would not have come across in school. These
-            include debugging tools, how to contribute to an existing codebase,
-            how to make a PR, how to adhere to coding standards/styles, etc.
-            This was an amazing learning experience as I got to work with tools
-            and frameworks that I had never seen before and that broadened my
-            understanding of the industry.
+            While working at NCR, I contributed heavily to multiple
+            micro-services and developed new features as they came from product
+            owners. For example, I was able to utilize security vulnerability
+            tools such as SonarQube, Coverity, AquaSecurity, and Whitesource in
+            order to identify and fix dependency vulnerabilies in certain
+            internal micro-services. I also helped develop a new micro-service
+            using Java Spring, Docker, Kubernetes, and Jenkins which taught me a
+            lot about these tools as they were completely new to me. Along with
+            this, I learned how to properly design software architectures for
+            new features before implementing them which paved a smooth developer
+            experience. My favourite part however was when I utilized Java and
+            an internal API building tool to construct multiple API endpoints
+            regarding the interaction between Teller Cash Recycler (TCR)
+            machines. These devices act as a miniature vault that handles both
+            teller transactions and vault buy/sell transactions.
           </Typography>
           <div className='pt-8'></div>
           <Typography variant='h3'>Conclusion</Typography>
           <Typography variant='lead'>
-            These past four months at Distributive truly shaped me as a
-            developer and I'm grateful to have contributed to their codebase.
-            Their product is very innovative and something that their target
-            audience gets a lot of use out of. I admired the fast-paced
-            environment of the startup and appreciated the "always learning"
-            mentality where no matter what, I was always learning something new.
+            The 4 months that I spent working at NCR this fall was very
+            enjoyable and I was able to learn a myriad of new technologies that
+            I previously never worked with. This meant that each day, I was
+            always learning something new and overall it made me more marketable
+            as a developer. Working in the financial-technology space also
+            taught me how to properly communicate and convey information to
+            product owners, managers, and senior engineers. I appreciated
+            working in an Agile environment for the first time as I was given
+            enough time to complete my stories to the best of my ability and be
+            able to convey any questions or concerns I had with the team on a
+            daily basis. Overall, I admired the time spent working at NCR as a
+            Software Developer Intern and accomplished many things that I'm
+            proud of.
           </Typography>
           <div className='pt-8'></div>
           <Typography variant='h3'>Acknowledgments</Typography>
           <Typography variant='lead'>
-            Special thanks to{' '}
-            <a
-              className='text-blue-700'
-              href='https://www.linkedin.com/in/dan-desjardins/'
-            >
-              Dan Desjardins
-            </a>{' '}
-            and{' '}
-            <a
-              className='text-blue-700'
-              href='https://www.linkedin.com/in/wesley-garland-2203a23/'
-            >
-              Wes Garland
-            </a>{' '}
-            for being great mentors. It was an awesome experience being able to
-            learn hands-on with them and be able to ask questions directly to
-            them. Also shoutout to{' '}
-            <a className='text-blue-700' href='https://github.com/bryan-hoang'>
-              Bryan
-            </a>{' '}
-            for the immense support as well as always pushing me to be a leader
-            in every case possible (Thanks for letting me spill my Neovim
-            knowledge onto you).
+            I'd like to thank Yuktika for being a great mentor and leader for
+            the team. Also big thank you to Priyanka for always being there to
+            answer any question I had and providing clear explainations to them.
+            Finally, I'd like to thank the rest of my team at NCR for the
+            opportunity to work with them this fall. It was a fun and memorable
+            time with lots of learning happening each and everyday!
           </Typography>
         </section>
       </div>
