@@ -56,7 +56,15 @@ a {
   transform: rotate(45deg);
 }
 
+#card {
+  border-image: url(../public/assets/shadow.png) 10 / 10px;
+}
+
 @media screen and (max-width: 420px) {
+  #card {
+    margin-left: 6px;
+  }
+
   #icon-container #icons {
     display: flex;
     flex-direction: row;
