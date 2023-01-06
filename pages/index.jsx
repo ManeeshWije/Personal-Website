@@ -48,8 +48,6 @@ export default function Home() {
             width={600}
             height={450}
             className='rounded-md'
-            unoptimized={true}
-            priority={true}
           />
         </div>
         <div className='text-center flex justify-center flex-col items-center animate-in duration-2s slide-in-from-left-80'>
@@ -269,8 +267,6 @@ export default function Home() {
             width={600}
             height={400}
             className='max-w-full h-auto rounded-md'
-            priority={true}
-            unoptimized={true}
           />
           <p>Midnight Lightning, Yosemite</p>
         </div>
