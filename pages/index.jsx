@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 
 export default function Home() {
   const scrollHalf = () => {
-    window.scrollTo(0, document.body.scrollHeight / 2);
+    window.scrollBy(0, document.body.scrollHeight / 3);
   };
 
   useEffect(() => {
