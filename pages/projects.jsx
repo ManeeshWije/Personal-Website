@@ -27,7 +27,7 @@ export default function Projects() {
         </Typography>
       </div>
       <div className='md:overflow-hidden animate-in fade-in-5 duration-2s flex flex-col justify-center flex-wrap gap-x-9 gap-y-20 py-8 md:flex-row'>
-        <Card id='card' shadow={false} className='w-96 animate-in slide-in-from-right-12 duration-2s'>
+        <Card id='card' shadow={false} className='w-96'>
           <CardHeader shadow={false} className='relative h-56'>
             <Image
               src={solar}
@@ -75,7 +75,7 @@ export default function Projects() {
             </Typography>
           </CardFooter>
         </Card>
-        <Card id='card' shadow={false} className='w-96 animate-in slide-in-from-right-12 duration-2s'>
+        <Card id='card' shadow={false} className='w-96 '>
           <CardHeader shadow={false} className='relative h-56'>
             <Image
               src={reduction}
@@ -123,7 +123,7 @@ export default function Projects() {
             </Typography>
           </CardFooter>
         </Card>
-        <Card id='card' shadow={false} className='w-96 animate-in slide-in-from-right-12 duration-2s'>
+        <Card id='card' shadow={false} className='w-96 '>
           <CardHeader shadow={false} className='relative h-56'>
             <Image
               src={pokedex}
@@ -169,7 +169,7 @@ export default function Projects() {
             </Typography>
           </CardFooter>
         </Card>
-        <Card id='card' shadow={false} className='w-96 animate-in slide-in-from-right-12 duration-2s'>
+        <Card id='card' shadow={false} className='w-96 '>
           <CardHeader shadow={false} className='relative h-56'>
             <Image
               src={tasker}
@@ -215,7 +215,7 @@ export default function Projects() {
             </Typography>
           </CardFooter>
         </Card>
-        <Card id='card' shadow={false} className='w-96 animate-in slide-in-from-right-12 duration-2s'>
+        <Card id='card' shadow={false} className='w-96 '>
           <CardHeader shadow={false} className='relative h-56'>
             <Image
               src={gochat}
@@ -261,7 +261,7 @@ export default function Projects() {
             </Typography>
           </CardFooter>
         </Card>
-        <Card id='card' shadow={false} className='w-96 animate-in slide-in-from-right-12 duration-2s'>
+        <Card id='card' shadow={false} className='w-96 '>
           <CardHeader shadow={false} className='relative h-56'>
             <Image
               src={twitterBot}
@@ -297,7 +297,7 @@ export default function Projects() {
             </Typography>
           </CardFooter>
         </Card>
-        <Card id='card' shadow={false} className='w-96 animate-in slide-in-from-right-12 duration-2s'>
+        <Card id='card' shadow={false} className='w-96 '>
           <CardHeader shadow={false} className='relative h-56'>
             <Image
               src={mash}
@@ -328,7 +328,7 @@ export default function Projects() {
             </Typography>
           </CardFooter>
         </Card>
-        <Card id='card' shadow={false} className='w-96 animate-in slide-in-from-right-12 duration-2s'>
+        <Card id='card' shadow={false} className='w-96 '>
           <CardHeader shadow={false} className='relative h-56'>
             <Image
               src={ctypetest}
@@ -361,7 +361,7 @@ export default function Projects() {
             </Typography>
           </CardFooter>
         </Card>
-        <Card id='card' shadow={false} className='w-96 animate-in slide-in-from-right-12 duration-2s'>
+        <Card id='card' shadow={false} className='w-96 '>
           <CardHeader shadow={false} className='relative h-56'>
             <Image
               src={personal}
