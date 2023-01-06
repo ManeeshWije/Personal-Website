@@ -71,8 +71,6 @@ export default function Home() {
               aria-label='contact-me'
               color='blue-gray'
               className='animate-pulse duration-2s'
-              role='button'
-              aria-labelledby='inner-text'
             >
               Contact Me
             </Button>
