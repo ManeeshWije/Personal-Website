@@ -264,7 +264,7 @@ export default function Home() {
         </Typography>
         <div
           id='yosemite'
-          className='animate-in slide-in-from-left-full duration-500 w-5/12 p-4 flex flex-row flex-wrap float-right justify-center items-center'
+          className='animate-in slide-in-from-left-full duration-500 w-5/12 p-4 flex flex-col flex-wrap float-right justify-center items-center'
         >
           <Image
             src={yosemite}
@@ -275,6 +275,9 @@ export default function Home() {
             priority
           />
           <p>Midnight Lightning, Yosemite</p>
+          <a className='text-blue-400' href='https://gripped.com/news/tom-herbert-51-sends-midnight-lightning-v8-in-yosemite/'>
+            Credits
+          </a>
         </div>
       </div>
     </>
