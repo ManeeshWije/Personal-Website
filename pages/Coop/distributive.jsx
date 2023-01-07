@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Head from 'next/head';
 import { Typography } from '@material-tailwind/react';
 import distributive from '/public/assets/distributive.png';
 import kingston from '/public/assets/kingston.jpg';
@@ -7,6 +8,15 @@ import tech from '/public/assets/tech.png';
 export default function Distributive() {
   return (
     <>
+      <Head>
+        <title>Distributive</title>
+        <meta charSet='utf-8' />
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta
+          name='description'
+          content='Co-op experience at Distributive by Maneesh Wijewardhana'
+        />
+      </Head>
       <div className='animate-in slide-in-from-left-20 duration-700 p-5 pt-8 flex flex-col justify-center items-center'>
         <a href='https://kingsds.network/'>
           <Image
@@ -59,7 +69,6 @@ export default function Distributive() {
               with minimal guidance when it comes to discovering/fixing bugs,
               writing tests, etc.
             </Typography>
-            <br />
             <Typography variant='lead' as='li'>
               - Work on my leadership skills even while being a new intern
               without any previous experience. I want to be able to act as a
@@ -68,7 +77,6 @@ export default function Distributive() {
               that I can answer most of the questions that the other interns
               might have which will allow them to grow/mature while I do.
             </Typography>
-            <br />
             <Typography variant='lead' as='li'>
               - Expand my knowledge of the JavaScript language as well as
               Node.js as these two are the backbones of the DCP technology. I
@@ -97,7 +105,6 @@ export default function Distributive() {
               developed a lot of new features and fixed certain issues
               throughout the codebase.
             </Typography>
-            <br />
             <Typography variant='lead' as='li'>
               - I was able to onboard within a day and because of that, assist
               my peers with their on-boarding or any other questions they had. I
@@ -112,7 +119,6 @@ export default function Distributive() {
               like a leader during my work term and it allowed me to be more
               confident as a developer.
             </Typography>
-            <br />
             <Typography variant='lead' as='li'>
               - I achieved this goal because since our codebase was written in
               JavaScript, I forced myself to learn it thoroughly even though I

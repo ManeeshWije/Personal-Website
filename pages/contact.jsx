@@ -1,6 +1,16 @@
+import Head from 'next/head';
 export default function Contact() {
   return (
     <>
+      <Head>
+        <title>Contact Me</title>
+        <meta charSet='utf-8' />
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta
+          name='description'
+          content='Contact Maneesh Wijewardhana via email or other social media'
+        />
+      </Head>
       <div className='animate-in slide-in-from-top-10 duration-1000 py-8 lg:py-16 px-4 mx-auto max-w-screen-md'>
         <h2 className='mb-4 text-4xl tracking-tight font-extrabold text-center text-blue-gray-900 dark:text-white'>
           Contact Me

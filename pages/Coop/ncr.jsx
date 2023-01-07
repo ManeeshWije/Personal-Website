@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Head from 'next/head';
 import { Typography } from '@material-tailwind/react';
 import ncr from '/public/assets/ncr-logo.png';
 import waterloo from '/public/assets/waterloo.jpg';
@@ -7,13 +8,22 @@ import techNcr from '/public/assets/tech-ncr.png';
 export default function Ncr() {
   return (
     <>
+      <Head>
+        <title>NCR</title>
+        <meta charSet='utf-8' />
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta
+          name='description'
+          content='Co-op experience at NCR by Maneesh Wijewardhana'
+        />
+      </Head>
       <div className='animate-in slide-in-from-left-20 duration-700 p-5 pt-8 flex flex-col justify-center items-center'>
         <a href='https://www.ncr.com'>
           <Image src={ncr} width={189} height={60} alt='ncr-logo' />
         </a>
         <i>Fall 2022</i>
         <section>
-          <Typography variant='h3'>About the Company</Typography>
+          <Typography className='pt-4' variant='h3'>About the Company</Typography>
           <Typography variant='lead'>
             NCR is a technology company based in Atlanta, Georgia, United States
             that started off in the financial space with hardware devices. They
@@ -75,7 +85,6 @@ export default function Ncr() {
               tools will allow me to expand my development toolbox as well as be
               more comfortable using them in the future.
             </Typography>
-            <br />
             <Typography variant='lead' as='li'>
               <b>2.</b> Improve my communication skills whether that be orally
               in daily scrum meetings, and sprint plannings, but also written in
@@ -85,7 +94,6 @@ export default function Ncr() {
               plan to do. Both types of communication skills are important to
               have as a developer to efficiently produce quality work. do.
             </Typography>
-            <br />
             <Typography variant='lead' as='li'>
               <b>3.</b> Strike a balance between quality/quantity when it comes
               to the work I do. I want to be able to produce high-quality
@@ -117,7 +125,6 @@ export default function Ncr() {
               which benefited me not only in the workplace but also in my own
               projects.
             </Typography>
-            <br />
             <Typography variant='lead' as='li'>
               <b>2.</b> I achieved this goal because throughout my time at NCR,
               I made sure that I conveyed the ideas and comments that I had in a
@@ -134,7 +141,6 @@ export default function Ncr() {
               and written communication skills improved and allowed me to
               produce quality work.
             </Typography>
-            <br />
             <Typography variant='lead' as='li'>
               <b>3.</b> I achieved this goal by completing all my assigned
               features/tasks and even more during each sprint. With these tasks,

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Head from 'next/head';
 import {
   Card,
   CardHeader,
@@ -20,6 +21,15 @@ import ctypetest from '/public/assets/ctypetest.png';
 export default function Projects() {
   return (
     <>
+      <Head>
+        <title>Projects</title>
+        <meta charSet='utf-8' />
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta
+          name='description'
+          content='Projects page for Maneesh Wijewardhana'
+        />
+      </Head>
       <div className='animate-in fade-in-5 duration-2s text-center p-8'>
         <Typography>
           I'm always learning new technologies/frameworks and these are some
