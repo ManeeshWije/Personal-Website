@@ -114,3 +114,9 @@ a {
     width: 58%;
   }
 }
+
+@media screen and (max-width: 420px) {
+  #yosemite {
+    width: 100%;
+  }
+}

@@ -231,10 +231,14 @@ export default function Home() {
           I started my journey learning C which taught me a lot about the
           fundamentals of programming, low-level computing, and allowed me to
           have an appreciation for higher-level languages. These days, however,
-          I often work with a lot of different web technologies which lets me
-          develop my software ideas quickly, relatively efficiently, and be able
-          to enjoy the process. I also love polishing up my algorithmic and
-          problem-solving abilities in Python
+          I often work with a lot of different web technologies and frameworks
+          which lets me develop my software ideas quickly, relatively
+          efficiently, and I enjoy the process a lot. In addition to this, I
+          have experience working with certain DevOps tools from my past
+          internships which include Kubernetes, GCP, Jenkins, and more. I also
+          love polishing up my algorithmic and problem-solving abilities in
+          Python whether this be in the annual Advent of Code or other code
+          katas.
         </Typography>
       </div>
 
@@ -251,11 +255,10 @@ export default function Home() {
           className='px-4 w-5/12 animate-in slide-in-from-left-full duration-500'
           variant='lead'
         >
-          Apart from programming, I also like to stay active by going climbing.
-          Whether it's a crag in the area or the local gym, I participate in all
-          of it, however, as of now, I mainly focus on bouldering. I've been
-          bouldering for around 6 months now and some PB's of mine are V5 (6C+)
-          indoors with outdoors coming soon.{' '}
+          Apart from programming, I also love to stay active by going climbing
+          whether it's a crag in the area or the local gym. As of now, I mainly
+          focus on bouldering and I've been doing it for around 6 months. Some
+          PB's of mine are V5 (6C+) indoors with outdoors coming soon.{' '}
           <b>
             (gyms are relative so grades don't really paint the full picture).
           </b>{' '}
@@ -275,7 +278,10 @@ export default function Home() {
             priority
           />
           <p>Midnight Lightning, Yosemite</p>
-          <a className='text-blue-400' href='https://gripped.com/news/tom-herbert-51-sends-midnight-lightning-v8-in-yosemite/'>
+          <a
+            className='text-blue-400'
+            href='https://gripped.com/news/tom-herbert-51-sends-midnight-lightning-v8-in-yosemite/'
+          >
             Credits
           </a>
         </div>
