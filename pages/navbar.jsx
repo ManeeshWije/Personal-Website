@@ -94,16 +94,6 @@ export default function NavBar() {
           </a>
         </Link>
       </Typography>
-      <Typography
-        as='li'
-        variant='paragraph'
-        color='blue-gray'
-        className='p-1 font-normal'
-      >
-        <Link href='https://drive.google.com/file/d/1fN4zLvMdYTaAgHlPTdVLtymQIg-kxyWp/view?usp=share_link'>
-          Resume
-        </Link>
-      </Typography>
     </ul>
   );
 
