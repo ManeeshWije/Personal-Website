@@ -23,7 +23,9 @@ export default function Ncr() {
         </a>
         <i>Fall 2022</i>
         <section>
-          <Typography className='pt-4' variant='h3'>About the Company</Typography>
+          <Typography className='pt-4' variant='h3'>
+            About the Company
+          </Typography>
           <Typography variant='lead'>
             NCR is a technology company based in Atlanta, Georgia, United States
             that started off in the financial space with hardware devices. They
@@ -32,7 +34,7 @@ export default function Ncr() {
             applications for banks and other institutions in order to offer
             users digital banking services. Due to the variety of solutions NCR
             provides, there is a high chance that you yourself have come across
-            a piece of hardware of software developed by NCR. This could be the
+            a piece of hardware or software developed by NCR. This could be the
             self checkout machine at your local grocery store, or the app you
             use to access your banking information.
           </Typography>
