@@ -103,7 +103,7 @@ a {
   #hobby-title,
   #yosemite {
     animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -0.4s);
+    animation-delay: calc(var(--scroll) * -0.5s);
     animation-iteration-count: 1;
     animation-fill-mode: both;
   }

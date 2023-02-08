@@ -62,7 +62,7 @@ export default function Home() {
           >
             A Computer Science student studying at the University of Guelph who
             is passionate about developing software and always curious to learn
-            new technologies in the industry
+            new technologies in the industry.
           </Typography>
         </div>
         <div className='py-8 animate-in duration-2s slide-in-from-right-full'>
@@ -232,13 +232,11 @@ export default function Home() {
           fundamentals of programming, low-level computing, and allowed me to
           have an appreciation for higher-level languages. These days, however,
           I often work with a lot of different web technologies and frameworks
-          which lets me develop my software ideas quickly, relatively
-          efficiently, and I enjoy the process a lot. In addition to this, I
+          which lets me develop my software ideas as full applications. In addition to this, I
           have experience working with certain DevOps tools from my past
-          internships which include Kubernetes, GCP, Jenkins, and more. I also
-          love polishing up my algorithmic and problem-solving abilities in
-          Python whether this be in the annual Advent of Code or other code
-          katas.
+          internships that include Kubernetes, GCP, Jenkins, and more. I also
+          love polishing up my algorithmic and problem-solving abilities whether this 
+          be in the annual Advent of Code or other code katas.
         </Typography>
       </div>
 
@@ -258,12 +256,9 @@ export default function Home() {
           Apart from programming, I also love to stay active by going climbing
           whether it's a crag in the area or the local gym. As of now, I mainly
           focus on bouldering and I've been doing it for around 6 months. Some
-          PB's of mine are V5 (6C+) indoors with outdoors coming soon.{' '}
-          <b>
-            (gyms are relative so grades don't really paint the full picture).
-          </b>{' '}
+          PB's of mine are V5 (6C+) indoors with outdoors coming soon.
           Overall, I greatly enjoy the problem-solving aspect of figuring out a
-          route and being able to push myself physically is an added bonus
+          route and being able to push myself physically is an added bonus.
         </Typography>
         <div
           id='yosemite'
