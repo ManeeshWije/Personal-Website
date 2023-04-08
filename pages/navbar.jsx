@@ -35,7 +35,7 @@ export default function NavBar() {
         className='p-1 font-normal'
       >
         <Link href='/'>
-          <a className={router.pathname == '/' ? 'font-bold' : ''}> Home</a>
+          <a className={router.pathname == '/' ? 'font-bold' : ''} onClick={() => setOpenNav(false)}> Home</a>
         </Link>
       </Typography>
       <Typography
@@ -45,7 +45,7 @@ export default function NavBar() {
         className='p-1 font-normal'
       >
         <Link href='/projects'>
-          <a className={router.pathname == '/projects' ? 'font-bold' : ''}>
+          <a className={router.pathname == '/projects' ? 'font-bold' : ''} onClick={() => setOpenNav(false)}>
             Projects
           </a>
         </Link>
@@ -72,12 +72,12 @@ export default function NavBar() {
         <MenuList>
           <span>
             <Link href='/Coop/distributive'>
-              <MenuItem>Distributive</MenuItem>
+              <MenuItem onClick={() => setOpenNav(false)}>Distributive</MenuItem>
             </Link>
           </span>
           <span>
             <Link href='/Coop/ncr'>
-              <MenuItem>NCR</MenuItem>
+              <MenuItem onClick={() => setOpenNav(false)}>NCR</MenuItem>
             </Link>
           </span>
         </MenuList>
@@ -89,7 +89,7 @@ export default function NavBar() {
         className='p-1 font-normal'
       >
         <Link href='/contact'>
-          <a className={router.pathname == '/contact' ? 'font-bold' : ''}>
+          <a className={router.pathname == '/contact' ? 'font-bold' : ''} onClick={() => setOpenNav(false)}>
             Contact
           </a>
         </Link>
