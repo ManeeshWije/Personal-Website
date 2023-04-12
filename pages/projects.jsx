@@ -10,7 +10,6 @@ import {
 } from '@material-tailwind/react';
 import reduction from '/public/assets/reduction.png';
 import pokedex from '/public/assets/pokedex.png';
-import tasker from '/public/assets/tasker.png';
 import gochat from '/public/assets/real-time-chat.png';
 import twitterBot from '/public/assets/twitter_like_bot.png';
 import personal from '/public/assets/personal-blog.png';
@@ -175,52 +174,6 @@ export default function Projects() {
             >
               <Button color='blue-gray' size='sm'>
                 <a href='https://github.com/ManeeshWije/pokedex'>Github</a>
-              </Button>
-            </Typography>
-          </CardFooter>
-        </Card>
-        <Card id='card' shadow={false} className='w-96 '>
-          <CardHeader shadow={false} className='relative h-56'>
-            <Image
-              src={tasker}
-              width={1000}
-              height={750}
-              alt='tasker'
-              className='h-full w-full rounded-lg'
-              priority
-            />
-          </CardHeader>
-          <CardBody className='text-center py-14'>
-            <Typography color='blue-gray' variant='h5' className='mb-2'>
-              Tasker
-            </Typography>
-            <Typography color='blue-gray'>
-              A todo list app that was built using the MERN stack which allowed
-              me to work with a database and React.js for the first time.
-              Throughout this experience, I learned a lot about how
-              non-relational databases worked and how to set up an Express.js
-              server with CRUD operations that can manipulate my data. I was
-              also able to develop a clean and user-friendly front-end interface
-              that would interact with my server.
-            </Typography>
-          </CardBody>
-          <CardFooter className='flex flex-row absolute bottom-0'>
-            <Typography
-              variant='paragraph'
-              color='black'
-              className='mt-64 pt-28'
-            >
-              <Button color='blue-gray' size='sm'>
-                <a href='https://maneeshs-tasker.netlify.app/'>View</a>
-              </Button>
-            </Typography>
-            <Typography
-              variant='paragraph'
-              color='black'
-              className='mt-64 pt-28 ml-[200px]'
-            >
-              <Button color='blue-gray' size='sm'>
-                <a href='https://github.com/ManeeshWije/Tasker'>Github</a>
               </Button>
             </Typography>
           </CardFooter>

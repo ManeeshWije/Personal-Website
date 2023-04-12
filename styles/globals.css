@@ -6,7 +6,7 @@
 #tech-title,
 #icons {
   animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -1s);
+  animation-delay: calc(var(--scroll) * -1.4s);
   animation-iteration-count: 1;
   animation-fill-mode: both;
 }

@@ -234,8 +234,8 @@ export default function Home() {
           I often work with a lot of different web technologies and frameworks
           which lets me develop my software ideas as full applications. In addition to this, I
           have experience working with certain DevOps tools from my past
-          internships that include Kubernetes, GCP, Jenkins, and more. I also
-          love polishing up my algorithmic and problem-solving abilities whether this 
+          internships which include Kubernetes, GCP, Jenkins, and more. I also enjoy
+          polishing up my algorithmic and problem-solving abilities whether this 
           be in the annual Advent of Code or other code katas.
         </Typography>
       </div>
@@ -255,10 +255,10 @@ export default function Home() {
         >
           Apart from programming, I also love to stay active by going climbing
           whether it's a crag in the area or the local gym. As of now, I mainly
-          focus on bouldering and I've been doing it for around 6 months. Some
-          PB's of mine are V5 (6C+) indoors with outdoors coming soon.
+          focus on bouldering and I've been doing it for around 9 months with my PB
+          being V5 (6C+).
           Overall, I greatly enjoy the problem-solving aspect of figuring out a
-          route and being able to push myself physically is an added bonus.
+          boulder problem and being able to push myself physically is an added bonus.
         </Typography>
         <div
           id='yosemite'
