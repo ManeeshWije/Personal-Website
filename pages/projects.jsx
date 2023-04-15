@@ -16,6 +16,7 @@ import personal from '/public/assets/personal-blog.png';
 import solar from '/public/assets/solar.png';
 import mash from '/public/assets/mash.png';
 import ctypetest from '/public/assets/ctypetest.png';
+import pytoshop from '/public/assets/pytoshop.png';
 
 export default function Projects() {
   return (
@@ -39,6 +40,40 @@ export default function Projects() {
         <Card id='card' shadow={false} className='w-96'>
           <CardHeader shadow={false} className='relative h-56'>
             <Image
+              src={pytoshop}
+              width={1920}
+              height={1250}
+              alt='pytoshop'
+              className='h-full w-full rounded-lg'
+              priority
+            />
+          </CardHeader>
+          <CardBody className='text-center py-14'>
+            <Typography variant='h5' color='blue-gray' className='mb-2'>
+              Pytoshop
+            </Typography>
+            <Typography color='blue-gray'>
+                This is an image processing tool that performs various operations on greyscale and RGB images all written in scratch using <b>Python</b>.
+                I wanted to learn more about how image processing actually works under the hood by implementing the various algorithms used in certain operations such as Bilinear Interpolation, contrast/brightness enchancement, etc. This application is currently 
+                a desktop application using <b>Tkinter</b>, but plans are put in place to also add a web interface for easier use. Currently, the toolbox can perform many spatial transformations, single pixel operations, generate and equalize histograms, apply convolution kernels, perform non-linear filtering, and even do edge detection using the Sobel kernels.
+                There are many more operations I wish to add and so this project will be ongoing and is open for feedback on Github.
+            </Typography>
+          </CardBody>
+          <CardFooter className='flex flex-row absolute bottom-0'>
+            <Typography
+              variant='paragraph'
+              color='black'
+              className='mt-64 pt-24'
+            >
+              <Button color='blue-gray' size='sm'>
+                <a href='https://github.com/ManeeshWije/Pytoshop'>Github</a>
+              </Button>
+            </Typography>
+          </CardFooter>
+        </Card>
+        <Card id='card' shadow={false} className='w-96'>
+          <CardHeader shadow={false} className='relative h-56'>
+            <Image
               src={solar}
               width={1920}
               height={1250}
@@ -56,8 +91,7 @@ export default function Projects() {
               values that can be scaled and also displays important information
               about each planet. The purpose of it was to familiarize myself
               with 3D objects, animations, texture mapping, and camera
-              views/controls. I was able to use the Three.js library, React
-              functional components for the UI, and The Solar System OpenData
+              views/controls. I was able to use the <b>Three.js</b> library, <b>React</b> functional components for the UI, and The Solar System OpenData
               API to retrieve information. This project can be expanded in the
               future for more celestial bodies as well as more information about
               them.
@@ -100,8 +134,7 @@ export default function Projects() {
               Reduction
             </Typography>
             <Typography color='blue-gray'>
-              A minimal new tab chrome extension built with JavaScript and
-              HTML/CSS. I learned a lot about how API's are structured and used
+              A minimal new tab chrome extension built with <b>JavaScript</b> and <b>HTML/CSS</b>. I learned a lot about how API's are structured and used
               as I had to retrieve information from many of them. I was able to
               parse all of the needed information and display it in a prettified
               manner for the user. This was also my first time making any chrome
@@ -148,12 +181,11 @@ export default function Projects() {
               Pokedex
             </Typography>
             <Typography color='blue-gray'>
-              This is a MERN application that utilizes the PokeAPI in order to
+              This is a <b>MERN</b> application that utilizes the <b>PokeAPI</b> in order to
               get random Pokemon to save into a Pokedex based on their stats. In
               the Pokedex section, users are able to see all of their selected
               Pokemon in a concise manner and also have the ability to remove
-              Pokemon. Building this app allowed me to learn more about REST
-              API's, non-relational databases, and how to create routes in
+              Pokemon. Building this app allowed me to learn more about REST API's, non-relational databases, and how to create routes in
               React.
             </Typography>
           </CardBody>
@@ -195,8 +227,8 @@ export default function Projects() {
             </Typography>
             <Typography color='blue-gray'>
               This is a real-time chat app that was built using tools/languages
-              such as Socket.io, Express.js, Node.js, HTML, and some simple
-              styling using CSS. This project allowed me to learn more about how
+              such as <b>Socket.io</b>, <b>Express.js</b>, <b>Node.js</b>, <b>HTML</b>, and some simple
+              styling using <b>CSS</b>. This project allowed me to learn more about how
               websockets worked for real time capabilities. I was also able to
               deploy this onto Railway as a web app so other users can join into
               the chat room. In order to do this, I had to learn Express.js for
@@ -240,8 +272,8 @@ export default function Projects() {
               Twitter Like Bot
             </Typography>
             <Typography color='blue-gray'>
-              This bot is built with Python and more specifically, uses the
-              library Selenium WebDriver which is the backbone of all the
+              This bot is built with <b>Python</b> and more specifically, uses the
+              library <b>Selenium WebDriver</b> which is the backbone of all the
               automation. The bot will open your browser, log into your Twitter
               account, and then will start liking tweets based on the keyword
               inputted into the program. It does this by selecting certain DOM
@@ -279,7 +311,7 @@ export default function Projects() {
               A simple shell that has functionalities for common unix commands
               such as 'ls', 'cd', 'mkdir', etc. I also implemented the pipe
               command and input/output redirection using {'<'} and {'>'}. Built
-              with C, I learned a lot about threads, forking, common signals on
+              with <b>C</b>, I learned a lot about threads, forking, common signals on
               certain events, and overall how processes work within a program.
             </Typography>
           </CardBody>
@@ -312,7 +344,7 @@ export default function Projects() {
               been typed. I utilized the built in clock functions to record time
               and calculate words per minute. Stats include the gross WPM, net
               WPM, as well as overall accuracy. This was a fun project to do
-              after a long time of not writing any C code and allowed me to
+              after a long time of not writing any <b>C</b> code and allowed me to
               familiarize myself with it once again.
             </Typography>
           </CardBody>
@@ -341,7 +373,7 @@ export default function Projects() {
             </Typography>
             <Typography color='blue-gray'>
               This very website is something that is always in progress. Built
-              with Next.js and Tailwind, I am able to document my progress in
+              with <b>Next.js</b> and <b>Tailwind</b>, I am able to document my progress in
               the industry as well as share some of my projects at the same
               time.
             </Typography>
