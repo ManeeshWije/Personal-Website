@@ -55,8 +55,8 @@ export default function Projects() {
             <Typography color='blue-gray'>
                 This is an image processing tool that performs various operations on greyscale and RGB images all written in scratch using <b>Python</b>.
                 I wanted to learn more about how image processing actually works under the hood by implementing the various algorithms used in certain operations such as Bilinear Interpolation, contrast/brightness enchancement, etc. This application is currently 
-                a desktop application using <b>Tkinter</b>, but plans are put in place to also add a web interface for easier use. Currently, the toolbox can perform many spatial transformations, single pixel operations, generate and equalize histograms, apply convolution kernels, perform non-linear filtering, and even do edge detection using the Sobel kernels.
-                There are many more operations I wish to add and so this project will be ongoing and is open for feedback on Github.
+                a desktop application using <b>Tkinter</b>, but plans are put in place to also add a web interface for easier use.
+                There are many more operations and improvements I wish to add and so this project will be ongoing and is open for feedback on Github.
             </Typography>
           </CardBody>
           <CardFooter className='flex flex-row absolute bottom-0'>
