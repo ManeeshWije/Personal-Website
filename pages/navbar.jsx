@@ -104,7 +104,7 @@ export default function NavBar() {
             className='animate-in duration-1000 slide-in-from-top-24 fade-in-5 border-[#d3869b] drop-shadow-2xl bg-[#1d2021] mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4'
         >
             <div className='container mx-auto flex items-center justify-between'>
-                <a className='w-10' href='https://www.wijeproject.com'>
+                <a className='w-10 h-10' href='https://www.wijeproject.com'>
                     <Image
                         alt='maneesh-logo'
                         src={logo}
