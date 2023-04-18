@@ -50,7 +50,7 @@ export default function Home() {
                     alt='maneesh-portrait'
                     className='rounded-lg transition'
                     src={portrait}
-                    priorit
+                    priority
                     width={500}
                     height={400}
                 />
