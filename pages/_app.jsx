@@ -1,5 +1,5 @@
-import Navbar from '../components/navbar';
-import Footer from '../components/footer';
+import Navbar from './navbar';
+import Footer from './footer';
 import '../styles/globals.css';
 import { ThemeProvider } from '@material-tailwind/react';
 
