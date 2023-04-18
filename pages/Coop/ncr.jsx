@@ -27,11 +27,7 @@ export default function Ncr() {
                 </a>
                 <i>Fall 2022</i>
                 <section>
-                    <Typography
-                        className='pt-4'
-                        variant='h3'
-                        className='text-[#d3869b]'
-                    >
+                    <Typography className='pt-4 text-[#d3869b]' variant='h3'>
                         About the Company
                     </Typography>
                     <Typography variant='lead'>
