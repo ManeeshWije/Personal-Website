@@ -268,7 +268,7 @@ export default function Home() {
                     Apart from programming, I also love to stay active by going
                     climbing whether it's a crag in the area or the local gym.
                     As of now, I mainly focus on bouldering and I've been doing
-                    it for around 9 months with my PB being V5 (6C+). Overall, I
+                    it for around 9 months with my PB being V6 (7a). Overall, I
                     greatly enjoy the problem-solving aspect of figuring out a
                     boulder problem and being able to push myself physically is
                     an added bonus.
