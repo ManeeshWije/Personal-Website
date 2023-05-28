@@ -21,6 +21,12 @@ a:link {
     text-decoration: none;
 }
 
+a:visited {
+    color: #d3869b;
+    background-color: transparent;
+    text-decoration: none;
+}
+
 @keyframes blink {
     50% {
         opacity: 0;

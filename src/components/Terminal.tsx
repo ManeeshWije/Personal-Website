@@ -118,26 +118,12 @@ const Terminal: React.FC = () => {
             }
         } else if (args[0] === 'help') {
             if (args.length === 1) {
-                const lsString: string =
-                    '// ls accepts 0 arguments and will list the contents of the directory you are in.';
-                const cdString: string =
-                    '// cd accepts up to 1 argument and will move you to the directory specified in the argument. Providing no arguments will move you to the home directory.';
-                const pwdString: string =
-                    '// pwd accepts 0 arguments and will print the current working directory.';
-                const clearString: string =
-                    '// clear accepts 0 arguments and will clear the screen.';
-                const catString: string =
-                    '// cat accepts 1 argument which is a text file and will output the contents of it to the screen.';
-                const openString: string =
-                    '// open accepts 1 argument which can be images or html files and will redirect you to view the contents of the file (this is similar to the xdg-open command on linux or open on MacOS).';
+                const intro: string = 'only a small subset of bash commands are implemented and some functionalities may not exist such as flag options. The list is as follows: '
+                const set: string = 'ls, cd, pwd, clear, cat (only works with text files), open (similar to xdg-open on Linux and open on MacOS)'
                 setOutput((prevOutput) => [
                     ...prevOutput,
-                    lsString,
-                    cdString,
-                    pwdString,
-                    clearString,
-                    catString,
-                    openString,
+                    intro,
+                    set
                 ]);
             } else {
                 setOutput((prevOutput) => [
@@ -338,12 +324,12 @@ const Terminal: React.FC = () => {
         <>
             <div>
                 <h1 className='font-bold text-lg'>
-                    welcome to my personal website
+                    welcome to my personal website!
                 </h1>
                 <h1 className='font-bold text-lg'>
                     type 'help' to see the implemented commands
                 </h1>
-                <h1 className='font-bold text-lg'>have fun!</h1>
+                <h1 className='font-bold text-lg'>check out the source code for this project on my <a href="https://www.github.com/ManeeshWije">github</a></h1>
             </div>
             <div ref={terminalRef} className='output-container'>
                 <div>
@@ -375,7 +361,7 @@ const Terminal: React.FC = () => {
                     className='w-full bg-transparent caret-transparent'
                 />
             </div>
-            <div className='absolute top-0 right-0 p-4' id='portrait-img'>
+            <div className='absolute top-20 right-0 p-4' id='portrait-img'>
                 {showPortrait && (
                     <img
                         src={me}

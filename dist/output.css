@@ -538,8 +538,8 @@ video {
   right: 0px;
 }
 
-.top-0 {
-  top: 0px;
+.top-20 {
+  top: 5rem;
 }
 
 .float-right {
@@ -548,10 +548,6 @@ video {
 
 .flex {
   display: flex;
-}
-
-.contents {
-  display: contents;
 }
 
 .w-full {
@@ -669,7 +665,13 @@ input:focus {
 }
 
 a:link {
-  color: pink;
+  color: #d3869b;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #d3869b;
   background-color: transparent;
   text-decoration: none;
 }
