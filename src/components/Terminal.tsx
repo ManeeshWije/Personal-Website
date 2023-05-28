@@ -210,7 +210,7 @@ const Terminal: React.FC = () => {
                             `Hi, I'm Maneesh, a Computer Science student studying at the University of
                             Guelph who is passionate about developing software and
                             always curious to learn new technologies in the
-                            industry. I code a ton whether it be for fullstack applications, code katas, and more!
+                            industry. I code a ton whether it be fullstack applications, code katas, and more!
                             `,
                             `You can check out my other projects here: <a href="https://www.github.com/ManeeshWije">www.github.com/ManeeshWije</a>`,
                         ]);
