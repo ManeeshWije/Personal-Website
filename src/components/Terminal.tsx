@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import me from '../../src/assets/me.jpg';
 
 const Terminal: React.FC = () => {
