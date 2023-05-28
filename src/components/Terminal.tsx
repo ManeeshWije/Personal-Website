@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import me from '../../src/assets/me.jpg';
 
 const Terminal: React.FC = () => {
-    const navigate = useNavigate();
     const goToDistributive = () => {
         window.open('/distributive', '_blank');
         // navigate('/distributive');
