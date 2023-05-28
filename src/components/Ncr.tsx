@@ -1,29 +1,14 @@
-import Image from 'next/image';
-import Head from 'next/head';
 import { Typography } from '@material-tailwind/react';
-import ncr from '/public/assets/ncr-logo.png';
-import waterloo from '/public/assets/waterloo.jpg';
-import techNcr from '/public/assets/tech-ncr.png';
+import ncr from '../assets/ncr-logo.png';
+import waterloo from '../assets/waterloo.jpg';
+import techNcr from '../assets/tech-ncr.png';
 
-export default function Ncr() {
+const Ncr: React.FC = () => {
     return (
         <>
-            <Head>
-                <title>NCR</title>
-                <meta charSet='utf-8' />
-                <meta
-                    name='viewport'
-                    content='initial-scale=1.0, width=device-width'
-                />
-                <meta
-                    name='description'
-                    content='Co-op experience at NCR by Maneesh Wijewardhana'
-                />
-                <meta name='darkreader-lock' content='' />
-            </Head>
             <div className='text-[#ddc7a1] animate-in slide-in-from-left-20 duration-700 p-5 pt-8 flex flex-col justify-center items-center'>
                 <a href='https://www.ncr.com'>
-                    <Image src={ncr} width={189} height={60} alt='ncr-logo' />
+                    <img src={ncr} width={189} height={60} alt='ncr-logo' />
                 </a>
                 <i>Fall 2022</i>
                 <section>
@@ -46,7 +31,7 @@ export default function Ncr() {
                     </Typography>
                     <div className='pt-8'></div>
                     <figure className='p-4 float-right text-center'>
-                        <Image
+                        <img
                             src={waterloo}
                             width={431}
                             height={300}
@@ -193,7 +178,7 @@ export default function Ncr() {
                         Highlights
                     </Typography>
                     <figure className='p-4 float-right text-center'>
-                        <Image
+                        <img
                             src={techNcr}
                             width={350}
                             height={350}
@@ -261,4 +246,6 @@ export default function Ncr() {
             <div className='pt-4'></div>
         </>
     );
-}
+};
+
+export default Ncr;

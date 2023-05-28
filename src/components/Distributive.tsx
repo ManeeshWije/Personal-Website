@@ -1,14 +1,13 @@
-import Image from 'next/image';
-import Head from 'next/head';
+import React from 'react';
 import { Typography } from '@material-tailwind/react';
-import distributive from '/public/assets/distributive.png';
-import kingston from '/public/assets/kingston.jpg';
-import tech from '/public/assets/tech.png';
+import distributive from '../assets/distributive.png';
+import kingston from '../assets/kingston.jpg';
+import tech from '../assets/tech.png';
 
-export default function Distributive() {
+const Distributive: React.FC = () => {
     return (
         <>
-            <Head>
+            <head>
                 <title>Distributive</title>
                 <meta charSet='utf-8' />
                 <meta
@@ -20,10 +19,10 @@ export default function Distributive() {
                     content='Co-op experience at Distributive by Maneesh Wijewardhana'
                 />
                 <meta name='darkreader-lock' content='' />
-            </Head>
+            </head>
             <div className='text-[#ddc7a1] animate-in slide-in-from-left-20 duration-700 p-5 pt-8 flex flex-col justify-center items-center'>
                 <a href='https://kingsds.network/'>
-                    <Image
+                    <img
                         src={distributive}
                         width={250}
                         height={45}
@@ -36,7 +35,7 @@ export default function Distributive() {
                         Introduction
                     </Typography>
                     <figure className='p-4 float-right text-center'>
-                        <Image
+                        <img
                             src={kingston}
                             width={431}
                             height={300}
@@ -161,7 +160,7 @@ export default function Distributive() {
                         Highlights
                     </Typography>
                     <figure className='p-4 float-right text-center'>
-                        <Image
+                        <img
                             src={tech}
                             width={350}
                             height={350}
@@ -241,4 +240,6 @@ export default function Distributive() {
             <div className='pt-4'></div>
         </>
     );
-}
+};
+
+export default Distributive;
