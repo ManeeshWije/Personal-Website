@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Terminal from './components/Terminal.tsx';
 import Distributive from './components/Distributive.tsx';
 import Ncr from './components/Ncr.tsx';
