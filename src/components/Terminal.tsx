@@ -3,15 +3,15 @@ import me from '../../src/assets/me.jpg';
 
 const Terminal: React.FC = () => {
     const goToDistributive = () => {
-        window.open('/distributive', '_blank');
+        window.open(`${window.location.origin}/distributive`);
     };
 
     const goToNCR = () => {
-        window.open('/ncr', '_blank');
+        window.open(`${window.location.origin}/ncr`);
     };
 
     const goToTulip = () => {
-        window.open('/tulip', '_blank');
+        window.open(`${window.location.origin}/tulip`);
     };
 
     const [input, setInput] = useState('');
