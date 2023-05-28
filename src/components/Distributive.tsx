@@ -7,19 +7,6 @@ import tech from '../assets/tech.png';
 const Distributive: React.FC = () => {
     return (
         <>
-            <head>
-                <title>Distributive</title>
-                <meta charSet='utf-8' />
-                <meta
-                    name='viewport'
-                    content='initial-scale=1.0, width=device-width'
-                />
-                <meta
-                    name='description'
-                    content='Co-op experience at Distributive by Maneesh Wijewardhana'
-                />
-                <meta name='darkreader-lock' content='' />
-            </head>
             <div className='text-[#ddc7a1] animate-in slide-in-from-left-20 duration-700 p-5 pt-8 flex flex-col justify-center items-center'>
                 <a href='https://kingsds.network/'>
                     <img

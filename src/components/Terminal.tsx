@@ -5,15 +5,16 @@ import me from '../../src/assets/me.jpg';
 const Terminal: React.FC = () => {
     const navigate = useNavigate();
     const goToDistributive = () => {
-        navigate('/distributive');
+        window.open('/distributive', '_blank');
+        // navigate('/distributive');
     };
 
     const goToNCR = () => {
-        navigate('/ncr');
+        window.open('/ncr', '_blank');
     };
 
     const goToTulip = () => {
-        navigate('/tulip');
+        window.open('/tulip', '_blank');
     };
 
     const [input, setInput] = useState('');
