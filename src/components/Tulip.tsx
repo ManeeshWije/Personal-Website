@@ -1,4 +1,3 @@
-import { Typography } from '@material-tailwind/react';
 import tulipLogo from '../assets/tulip-logo.png';
 
 const Tulip: React.FC = () => {
