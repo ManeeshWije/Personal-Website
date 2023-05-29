@@ -1,20 +1,17 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import me from '../../src/assets/me.jpg';
 
 const Terminal: React.FC = () => {
-    const navigate = useNavigate();
     const goToDistributive = () => {
-        // navigate('/distributive');
-        window.open('/#/distributive','_blank')
+        window.open('/#/distributive', '_blank');
     };
 
     const goToNCR = () => {
-        navigate('/ncr');
+        window.open('/#/ncr', '_blank');
     };
 
     const goToTulip = () => {
-        navigate('/tulip');
+        window.open('/#/tulip', '_blank');
     };
 
     const [input, setInput] = useState('');
