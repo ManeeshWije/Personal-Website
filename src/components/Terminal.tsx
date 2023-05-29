@@ -6,7 +6,7 @@ const Terminal: React.FC = () => {
     const navigate = useNavigate();
     const goToDistributive = () => {
         // navigate('/distributive');
-        window.open('/distributive','_blank')
+        window.open('/#/distributive','_blank')
     };
 
     const goToNCR = () => {
