@@ -5,7 +5,8 @@ import me from '../../src/assets/me.jpg';
 const Terminal: React.FC = () => {
     const navigate = useNavigate();
     const goToDistributive = () => {
-        navigate('/distributive');
+        // navigate('/distributive');
+        window.open('/distributive','_blank')
     };
 
     const goToNCR = () => {
@@ -118,13 +119,11 @@ const Terminal: React.FC = () => {
             }
         } else if (args[0] === 'help') {
             if (args.length === 1) {
-                const intro: string = 'only a small subset of bash commands are implemented and some functionalities may not exist such as flag options. The list is as follows: '
-                const set: string = 'ls, cd, pwd, clear, cat (only works with text files), open (similar to xdg-open on Linux and open on MacOS)'
-                setOutput((prevOutput) => [
-                    ...prevOutput,
-                    intro,
-                    set
-                ]);
+                const intro: string =
+                    'only a small subset of bash commands are implemented and some functionalities may not exist such as flag options. The list is as follows: ';
+                const set: string =
+                    'ls, cd, pwd, clear, cat (only works with text files), open (similar to xdg-open on Linux and open on MacOS)';
+                setOutput((prevOutput) => [...prevOutput, intro, set]);
             } else {
                 setOutput((prevOutput) => [
                     ...prevOutput,
@@ -195,22 +194,24 @@ const Terminal: React.FC = () => {
                     if (args[1] === 'about.txt') {
                         setOutput((prevOutput) => [
                             ...prevOutput,
-                            `Hi, I'm Maneesh, a Computer Science student studying at the University of
+                            `hi, I'm Maneesh, a Computer Science student studying at the University of
                             Guelph who is passionate about developing software and
                             always curious to learn new technologies in the
-                            industry. I code a ton whether it be fullstack applications, code katas, and more!
+                            industry. I code a ton whether it be fullstack applications, code katas, and just random ideas that come to mind.
                             `,
                             `You can check out my other projects here: <a href="https://www.github.com/ManeeshWije">www.github.com/ManeeshWije</a>`,
                         ]);
                     } else if (args[1] === 'contact.txt') {
                         setOutput((prevOutput) => [
                             ...prevOutput,
-                            `You can contact me via email: <a href="mailto:m.mwije1@gmail.com">m.mwije1@gmail.com</a>`,
+                            `you can contact me via email: <a href="mailto:m.mwije1@gmail.com">m.mwije1@gmail.com</a>`,
+                            `or connect with me on LinkedIn: <a href="https://www.linkedin.com/in/maneeshwije/">https://www.linkedin.com/in/maneeshwije/</a>`,
+                            `also follow me on Twitter: <a href="https://twitter.com/maneesh_wije">https://twitter.com/maneesh_wije</a>`,
                         ]);
                     } else if (args[1] === 'fun_fact.txt') {
                         setOutput((prevOutput) => [
                             ...prevOutput,
-                            `Apart from programming, I also love to stay active by going
+                            `apart from programming, I also love to stay active by going
                             climbing whether it's the crag in the area or a local gym.
                             As of now, I mainly focus on bouldering and I've been doing
                             it for around a year with my PB being V6 (7a). Overall, I
@@ -329,7 +330,10 @@ const Terminal: React.FC = () => {
                 <h1 className='font-bold text-lg'>
                     type 'help' to see the implemented commands
                 </h1>
-                <h1 className='font-bold text-lg'>check out the source code for this project on my <a href="https://www.github.com/ManeeshWije">github</a></h1>
+                <h1 className='font-bold text-lg'>
+                    check out the source code for this project on my{' '}
+                    <a href='https://www.github.com/ManeeshWije'>github</a>
+                </h1>
             </div>
             <div ref={terminalRef} className='output-container'>
                 <div>
