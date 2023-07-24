@@ -88,8 +88,7 @@ const Terminal: React.FC = () => {
             } else {
                 setOutput((prevOutput) => [
                     ...prevOutput,
-                    `ERROR: ${args[0]} expects 0 arguments, found ${
-                        args.length - 1
+                    `ERROR: ${args[0]} expects 0 arguments, found ${args.length - 1
                     }`,
                 ]);
             }
@@ -109,8 +108,7 @@ const Terminal: React.FC = () => {
             } else {
                 setOutput((prevOutput) => [
                     ...prevOutput,
-                    `ERROR: ${args[0]} expects 0 arguments, found ${
-                        args.length - 1
+                    `ERROR: ${args[0]} expects 0 arguments, found ${args.length - 1
                     }`,
                 ]);
             }
@@ -124,8 +122,7 @@ const Terminal: React.FC = () => {
             } else {
                 setOutput((prevOutput) => [
                     ...prevOutput,
-                    `ERROR: ${args[0]} expects 0 arguments, found ${
-                        args.length - 1
+                    `ERROR: ${args[0]} expects 0 arguments, found ${args.length - 1
                     }`,
                 ]);
             }
@@ -171,8 +168,7 @@ const Terminal: React.FC = () => {
             } else {
                 setOutput((prevOutput) => [
                     ...prevOutput,
-                    `ERROR: ${args[0]} expects 0 arguments, found ${
-                        args.length - 1
+                    `ERROR: ${args[0]} expects 0 arguments, found ${args.length - 1
                     }`,
                 ]);
             }
@@ -185,7 +181,7 @@ const Terminal: React.FC = () => {
                 ) {
                     setOutput((prevOutput) => [
                         ...prevOutput,
-                        `ERROR: cannot use cat on a directory.`,
+                        `ERROR: cannot use cat on a directory. Try using "ls" or "cd" instead`,
                     ]);
                 } else if (currentDirectory === "/Users/maneesh/Documents") {
                     if (args[1] === "about.txt") {
@@ -228,7 +224,7 @@ const Terminal: React.FC = () => {
                 ) {
                     setOutput((prevOutput) => [
                         ...prevOutput,
-                        `ERROR: cannot use cat on an image.`,
+                        `ERROR: cannot use cat on an image. Try using "open" instead`,
                     ]);
                 } else if (
                     currentDirectory ===
@@ -236,7 +232,7 @@ const Terminal: React.FC = () => {
                 ) {
                     setOutput((prevOutput) => [
                         ...prevOutput,
-                        `ERROR: cannot use cat on html files.`,
+                        `ERROR: cannot use cat on html files. Try using "open" instead`,
                     ]);
                 } else {
                     setOutput((prevOutput) => [
@@ -247,8 +243,7 @@ const Terminal: React.FC = () => {
             } else {
                 setOutput((prevOutput) => [
                     ...prevOutput,
-                    `ERROR: ${args[0]} expects 1 argument, found ${
-                        args.length - 1
+                    `ERROR: ${args[0]} expects 1 argument, found ${args.length - 1
                     }`,
                 ]);
             }
@@ -305,8 +300,7 @@ const Terminal: React.FC = () => {
             } else {
                 setOutput((prevOutput) => [
                     ...prevOutput,
-                    `ERROR: ${args[0]} expects 1 argument, found ${
-                        args.length - 1
+                    `ERROR: ${args[0]} expects 1 argument, found ${args.length - 1
                     }`,
                 ]);
             }
@@ -320,6 +314,9 @@ const Terminal: React.FC = () => {
 
     return (
         <>
+            <head>
+                <meta name="darkreader-lock" />
+            </head>
             <div>
                 <h1 className="font-bold text-lg">
                     welcome to my personal website!
