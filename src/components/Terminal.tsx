@@ -24,7 +24,7 @@ const Terminal: React.FC = () => {
     const validDirectories = [
         "/Users/maneesh/Pictures",
         "/Users/maneesh/Documents",
-        "/Users/maneesh/Documents/work_experience",
+        "/Users/maneesh/work_experience",
         "/Users/maneesh",
         "/Pictures",
         "/Documents",
@@ -62,19 +62,13 @@ const Terminal: React.FC = () => {
             if (args.length === 1) {
                 let files: string[];
                 if (currentDirectory === "/Users/maneesh") {
-                    files = ["Pictures", "Documents"];
+                    files = ["Pictures", "Documents", "work_experience"];
                 } else if (currentDirectory === "/Users/maneesh/Pictures") {
                     files = ["me.jpg"];
                 } else if (currentDirectory === "/Users/maneesh/Documents") {
-                    files = [
-                        "about.txt",
-                        "contact.txt",
-                        "fun_fact.txt",
-                        "work_experience",
-                    ];
+                    files = ["about.txt", "contact.txt", "fun_fact.txt"];
                 } else if (
-                    currentDirectory ===
-                    "/Users/maneesh/Documents/work_experience"
+                    currentDirectory === "/Users/maneesh/work_experience"
                 ) {
                     files = ["distributive.html", "ncr.html", "tulip.html"];
                 } else if (currentDirectory === "/Users") {
@@ -88,7 +82,8 @@ const Terminal: React.FC = () => {
             } else {
                 setOutput((prevOutput) => [
                     ...prevOutput,
-                    `ERROR: ${args[0]} expects 0 arguments, found ${args.length - 1
+                    `ERROR: ${args[0]} expects 0 arguments, found ${
+                        args.length - 1
                     }`,
                 ]);
             }
@@ -108,7 +103,8 @@ const Terminal: React.FC = () => {
             } else {
                 setOutput((prevOutput) => [
                     ...prevOutput,
-                    `ERROR: ${args[0]} expects 0 arguments, found ${args.length - 1
+                    `ERROR: ${args[0]} expects 0 arguments, found ${
+                        args.length - 1
                     }`,
                 ]);
             }
@@ -122,7 +118,8 @@ const Terminal: React.FC = () => {
             } else {
                 setOutput((prevOutput) => [
                     ...prevOutput,
-                    `ERROR: ${args[0]} expects 0 arguments, found ${args.length - 1
+                    `ERROR: ${args[0]} expects 0 arguments, found ${
+                        args.length - 1
                     }`,
                 ]);
             }
@@ -168,7 +165,8 @@ const Terminal: React.FC = () => {
             } else {
                 setOutput((prevOutput) => [
                     ...prevOutput,
-                    `ERROR: ${args[0]} expects 0 arguments, found ${args.length - 1
+                    `ERROR: ${args[0]} expects 0 arguments, found ${
+                        args.length - 1
                     }`,
                 ]);
             }
@@ -181,7 +179,7 @@ const Terminal: React.FC = () => {
                 ) {
                     setOutput((prevOutput) => [
                         ...prevOutput,
-                        `ERROR: cannot use cat on a directory. Try using "ls" or "cd" instead`,
+                        `ERROR: cannot use cat on a directory. Try using "cd" instead`,
                     ]);
                 } else if (currentDirectory === "/Users/maneesh/Documents") {
                     if (args[1] === "about.txt") {
@@ -190,7 +188,7 @@ const Terminal: React.FC = () => {
                             `hi, I'm Maneesh, a Computer Science student studying at the University of
                             Guelph who is passionate about developing software and
                             always curious to learn new technologies in the
-                            industry. I code a ton whether it be fullstack applications, code katas, and just random ideas that come to mind.
+                            industry. I program a ton whether it be fullstack applications, code katas, and just random ideas that come to mind.
                             `,
                             `You can check out my other projects here: <a href="https://www.github.com/ManeeshWije">www.github.com/ManeeshWije</a>`,
                         ]);
@@ -227,8 +225,7 @@ const Terminal: React.FC = () => {
                         `ERROR: cannot use cat on an image. Try using "open" instead`,
                     ]);
                 } else if (
-                    currentDirectory ===
-                    "/Users/maneesh/Documents/work_experience"
+                    currentDirectory === "/Users/maneesh/work_experience"
                 ) {
                     setOutput((prevOutput) => [
                         ...prevOutput,
@@ -243,7 +240,8 @@ const Terminal: React.FC = () => {
             } else {
                 setOutput((prevOutput) => [
                     ...prevOutput,
-                    `ERROR: ${args[0]} expects 1 argument, found ${args.length - 1
+                    `ERROR: ${args[0]} expects 1 argument, found ${
+                        args.length - 1
                     }`,
                 ]);
             }
@@ -264,8 +262,7 @@ const Terminal: React.FC = () => {
                         `ERROR: cannot use open on text files or directories`,
                     ]);
                 } else if (
-                    currentDirectory ===
-                    "/Users/maneesh/Documents/work_experience"
+                    currentDirectory === "/Users/maneesh/work_experience"
                 ) {
                     if (args[1] === "distributive.html") {
                         setOutput((prevOutput) => [
@@ -300,7 +297,8 @@ const Terminal: React.FC = () => {
             } else {
                 setOutput((prevOutput) => [
                     ...prevOutput,
-                    `ERROR: ${args[0]} expects 1 argument, found ${args.length - 1
+                    `ERROR: ${args[0]} expects 1 argument, found ${
+                        args.length - 1
                     }`,
                 ]);
             }
