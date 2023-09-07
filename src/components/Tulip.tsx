@@ -2,6 +2,7 @@ import { Typography } from "@material-tailwind/react";
 import tulipLogo from "../assets/tulip-logo.png";
 import kitchener from "../assets/kitchener.jpeg";
 import techTulip from "../assets/tech-tulip.png";
+import campTulip from "../assets/camp-tulip.jpeg";
 
 const Tulip: React.FC = () => {
     return (
@@ -130,9 +131,6 @@ const Tulip: React.FC = () => {
                 </section>
                 <div className="pt-8"></div>
                 <section>
-                    <Typography variant="h3" className="text-[#d3869b]">
-                        Highlights
-                    </Typography>
                     <figure className="p-4 float-right text-center">
                         <img
                             src={techTulip}
@@ -143,6 +141,9 @@ const Tulip: React.FC = () => {
                         />
                         <figcaption>Technologies Used</figcaption>
                     </figure>
+                    <Typography variant="h3" className="text-[#d3869b]">
+                        Highlights
+                    </Typography>
                     <Typography variant="lead">
                         After a few weeks of working at Tulip, I was assigned a task to work on a new product called
                         Customer Capture V2. It was a new and improved version of Customer Capture V1 which was form
@@ -171,6 +172,16 @@ const Tulip: React.FC = () => {
                         my goals and I am proud of the work I have done knowing that it will be used by many people in
                         the future.
                     </Typography>
+                    <figure className="px-4 float-right text-center">
+                        <img
+                            src={campTulip}
+                            width={370}
+                            height={250}
+                            alt="camp-tulip"
+                            className="rounded-lg float-right"
+                        />
+                        <figcaption>Camp Tulip, Toronto</figcaption>
+                    </figure>
                     <div className="pt-8"></div>
                     <Typography variant="h3" className="text-[#d3869b]">
                         Acknowledgments
@@ -182,7 +193,6 @@ const Tulip: React.FC = () => {
                     </Typography>
                 </section>
             </div>
-            <div className="pt-4"></div>
         </>
     );
 };
