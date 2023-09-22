@@ -205,7 +205,7 @@ const Terminal: React.FC = () => {
                             `apart from programming, I also love to stay active by going
                             climbing whether it's the crag in the area or a local gym.
                             As of now, I mainly focus on bouldering and I've been doing
-                            it for around a year with my PB being V7 (7a+). Overall, I
+                            it for around a year with my PB being V8 (7B). Overall, I
                             greatly enjoy the problem-solving aspect of figuring out a
                             boulder problem and being able to push myself physically is
                             an added bonus.`,
