@@ -20,6 +20,7 @@ const Terminal: React.FC = () => {
     const [currentDirectory, setCurrentDirectory] = useState("/Users/maneesh");
 
     const terminalRef = useRef<HTMLDivElement>(null);
+    const inputRef = useRef<HTMLInputElement>(null);
 
     const validDirectories = [
         "/Users/maneesh/Pictures",
@@ -29,7 +30,7 @@ const Terminal: React.FC = () => {
         "/Pictures",
         "/Documents",
         "/Users",
-        "/",
+        "/"
     ];
 
     useEffect(() => {
@@ -67,9 +68,7 @@ const Terminal: React.FC = () => {
                     files = ["me.jpg"];
                 } else if (currentDirectory === "/Users/maneesh/Documents") {
                     files = ["about.txt", "contact.txt", "fun_fact.txt"];
-                } else if (
-                    currentDirectory === "/Users/maneesh/work_experience"
-                ) {
+                } else if (currentDirectory === "/Users/maneesh/work_experience") {
                     files = ["distributive.html", "ncr.html", "tulip.html"];
                 } else if (currentDirectory === "/Users") {
                     files = ["maneesh"];
@@ -82,9 +81,7 @@ const Terminal: React.FC = () => {
             } else {
                 setOutput((prevOutput) => [
                     ...prevOutput,
-                    `ERROR: ${args[0]} expects 0 arguments, found ${
-                        args.length - 1
-                    }`,
+                    `ERROR: ${args[0]} expects 0 arguments, found ${args.length - 1}`
                 ]);
             }
         } else if (args[0] === "clear") {
@@ -103,9 +100,7 @@ const Terminal: React.FC = () => {
             } else {
                 setOutput((prevOutput) => [
                     ...prevOutput,
-                    `ERROR: ${args[0]} expects 0 arguments, found ${
-                        args.length - 1
-                    }`,
+                    `ERROR: ${args[0]} expects 0 arguments, found ${args.length - 1}`
                 ]);
             }
         } else if (args[0] === "help") {
@@ -118,9 +113,7 @@ const Terminal: React.FC = () => {
             } else {
                 setOutput((prevOutput) => [
                     ...prevOutput,
-                    `ERROR: ${args[0]} expects 0 arguments, found ${
-                        args.length - 1
-                    }`,
+                    `ERROR: ${args[0]} expects 0 arguments, found ${args.length - 1}`
                 ]);
             }
         } else if (args[0] === "cd") {
@@ -138,36 +131,22 @@ const Terminal: React.FC = () => {
                 // check if the new directory exists
                 if (validDirectories.includes(newDirectory)) {
                     setCurrentDirectory(newDirectory);
-                    setOutput((prevOutput) => [
-                        ...prevOutput,
-                        `Changed directory to: ${newDirectory}`,
-                    ]);
+                    setOutput((prevOutput) => [...prevOutput, `Changed directory to: ${newDirectory}`]);
                 } else {
-                    setOutput((prevOutput) => [
-                        ...prevOutput,
-                        `ERROR: Directory '${newDirectory}' does not exist`,
-                    ]);
+                    setOutput((prevOutput) => [...prevOutput, `ERROR: Directory '${newDirectory}' does not exist`]);
                 }
             } else {
                 newDirectory = "/Users/maneesh";
                 setCurrentDirectory(newDirectory);
-                setOutput((prevOutput) => [
-                    ...prevOutput,
-                    `Changed directory to: ${newDirectory}`,
-                ]);
+                setOutput((prevOutput) => [...prevOutput, `Changed directory to: ${newDirectory}`]);
             }
         } else if (args[0] === "pwd") {
             if (args.length == 1) {
-                setOutput((prevOutput) => [
-                    ...prevOutput,
-                    `${currentDirectory}`,
-                ]);
+                setOutput((prevOutput) => [...prevOutput, `${currentDirectory}`]);
             } else {
                 setOutput((prevOutput) => [
                     ...prevOutput,
-                    `ERROR: ${args[0]} expects 0 arguments, found ${
-                        args.length - 1
-                    }`,
+                    `ERROR: ${args[0]} expects 0 arguments, found ${args.length - 1}`
                 ]);
             }
         } else if (args[0] === "cat") {
@@ -179,7 +158,7 @@ const Terminal: React.FC = () => {
                 ) {
                     setOutput((prevOutput) => [
                         ...prevOutput,
-                        `ERROR: cannot use cat on a directory. Try using "cd" instead`,
+                        `ERROR: cannot use cat on a directory. Try using "cd" instead`
                     ]);
                 } else if (currentDirectory === "/Users/maneesh/Documents") {
                     if (args[1] === "about.txt") {
@@ -190,14 +169,14 @@ const Terminal: React.FC = () => {
                             always curious to learn new technologies in the
                             industry. I program a ton whether it be fullstack applications, code katas, and just random ideas that come to mind.
                             `,
-                            `You can check out my other projects here: <a href="https://www.github.com/ManeeshWije">www.github.com/ManeeshWije</a>`,
+                            `You can check out my other projects here: <a href="https://www.github.com/ManeeshWije">www.github.com/ManeeshWije</a>`
                         ]);
                     } else if (args[1] === "contact.txt") {
                         setOutput((prevOutput) => [
                             ...prevOutput,
                             `you can contact me via email: <a href="mailto:m.mwije1@gmail.com">m.mwije1@gmail.com</a>`,
                             `or connect with me on LinkedIn: <a href="https://www.linkedin.com/in/maneeshwije/">https://www.linkedin.com/in/maneeshwije/</a>`,
-                            `also follow me on Twitter: <a href="https://twitter.com/maneesh_wije">https://twitter.com/maneesh_wije</a>`,
+                            `also follow me on Twitter: <a href="https://twitter.com/maneesh_wije">https://twitter.com/maneesh_wije</a>`
                         ]);
                     } else if (args[1] === "fun_fact.txt") {
                         setOutput((prevOutput) => [
@@ -208,41 +187,28 @@ const Terminal: React.FC = () => {
                             it for around a year with my PB being V8 (7B). Overall, I
                             greatly enjoy the problem-solving aspect of figuring out a
                             boulder problem and being able to push myself physically is
-                            an added bonus.`,
+                            an added bonus.`
                         ]);
                     } else {
-                        setOutput((prevOutput) => [
-                            ...prevOutput,
-                            `ERROR: file ${args[1]} does not exist.`,
-                        ]);
+                        setOutput((prevOutput) => [...prevOutput, `ERROR: file ${args[1]} does not exist.`]);
                     }
-                } else if (
-                    currentDirectory === "/Users/maneesh/Pictures" &&
-                    args[1] === "me.jpg"
-                ) {
+                } else if (currentDirectory === "/Users/maneesh/Pictures" && args[1] === "me.jpg") {
                     setOutput((prevOutput) => [
                         ...prevOutput,
-                        `ERROR: cannot use cat on an image. Try using "open" instead`,
+                        `ERROR: cannot use cat on an image. Try using "open" instead`
                     ]);
-                } else if (
-                    currentDirectory === "/Users/maneesh/work_experience"
-                ) {
+                } else if (currentDirectory === "/Users/maneesh/work_experience") {
                     setOutput((prevOutput) => [
                         ...prevOutput,
-                        `ERROR: cannot use cat on html files. Try using "open" instead`,
+                        `ERROR: cannot use cat on html files. Try using "open" instead`
                     ]);
                 } else {
-                    setOutput((prevOutput) => [
-                        ...prevOutput,
-                        `ERROR: invalid use of cat`,
-                    ]);
+                    setOutput((prevOutput) => [...prevOutput, `ERROR: invalid use of cat`]);
                 }
             } else {
                 setOutput((prevOutput) => [
                     ...prevOutput,
-                    `ERROR: ${args[0]} expects 1 argument, found ${
-                        args.length - 1
-                    }`,
+                    `ERROR: ${args[0]} expects 1 argument, found ${args.length - 1}`
                 ]);
             }
         } else if (args[0] === "open") {
@@ -251,77 +217,61 @@ const Terminal: React.FC = () => {
                     if (args[1] === "me.jpg") {
                         setShowPortrait(true);
                     } else {
-                        setOutput((prevOutput) => [
-                            ...prevOutput,
-                            `ERROR: file ${args[1]} does not exist.`,
-                        ]);
+                        setOutput((prevOutput) => [...prevOutput, `ERROR: file ${args[1]} does not exist.`]);
                     }
                 } else if (currentDirectory === "/Users/maneesh/Documents") {
-                    setOutput((prevOutput) => [
-                        ...prevOutput,
-                        `ERROR: cannot use open on text files or directories`,
-                    ]);
-                } else if (
-                    currentDirectory === "/Users/maneesh/work_experience"
-                ) {
+                    setOutput((prevOutput) => [...prevOutput, `ERROR: cannot use open on text files or directories`]);
+                } else if (currentDirectory === "/Users/maneesh/work_experience") {
                     if (args[1] === "distributive.html") {
-                        setOutput((prevOutput) => [
-                            ...prevOutput,
-                            `redirecting...`,
-                        ]);
+                        setOutput((prevOutput) => [...prevOutput, `redirecting...`]);
                         goToDistributive();
                     } else if (args[1] === "ncr.html") {
-                        setOutput((prevOutput) => [
-                            ...prevOutput,
-                            `redirecting...`,
-                        ]);
+                        setOutput((prevOutput) => [...prevOutput, `redirecting...`]);
                         goToNCR();
                     } else if (args[1] === "tulip.html") {
-                        setOutput((prevOutput) => [
-                            ...prevOutput,
-                            `redirecting...`,
-                        ]);
+                        setOutput((prevOutput) => [...prevOutput, `redirecting...`]);
                         goToTulip();
                     } else {
-                        setOutput((prevOutput) => [
-                            ...prevOutput,
-                            `ERROR: file ${args[1]} not found`,
-                        ]);
+                        setOutput((prevOutput) => [...prevOutput, `ERROR: file ${args[1]} not found`]);
                     }
                 } else {
-                    setOutput((prevOutput) => [
-                        ...prevOutput,
-                        `ERROR: file ${args[1]} not found`,
-                    ]);
+                    setOutput((prevOutput) => [...prevOutput, `ERROR: file ${args[1]} not found`]);
                 }
             } else {
                 setOutput((prevOutput) => [
                     ...prevOutput,
-                    `ERROR: ${args[0]} expects 1 argument, found ${
-                        args.length - 1
-                    }`,
+                    `ERROR: ${args[0]} expects 1 argument, found ${args.length - 1}`
                 ]);
             }
         } else {
-            setOutput((prevOutput) => [
-                ...prevOutput,
-                `${args[0]}: command not found`,
-            ]);
+            setOutput((prevOutput) => [...prevOutput, `${args[0]}: command not found`]);
         }
     };
 
+    const handleMouseDown = (e: React.MouseEvent<HTMLInputElement>) => {
+        e.preventDefault();
+    };
+
+    // this is to keep the input focused even when you click outside of it
+    useEffect(() => {
+        const handleClickOutside = (e: MouseEvent) => {
+            if (inputRef.current && !inputRef.current.contains(e.target as Node)) {
+                inputRef.current.focus();
+            }
+        };
+
+        document.addEventListener("click", handleClickOutside);
+
+        return () => {
+            document.removeEventListener("click", handleClickOutside);
+        };
+    }, []);
+
     return (
-        <>
-            <head>
-                <meta name="darkreader-lock" />
-            </head>
+        <div>
             <div>
-                <h1 className="font-bold text-lg">
-                    welcome to my personal website!
-                </h1>
-                <h1 className="font-bold text-lg">
-                    type 'help' to see the implemented commands
-                </h1>
+                <h1 className="font-bold text-lg">welcome to my personal website!</h1>
+                <h1 className="font-bold text-lg">type 'help' to see the implemented commands</h1>
                 <h1 className="font-bold text-lg">
                     check out the source code for this project on my{" "}
                     <a href="https://www.github.com/ManeeshWije">github</a>
@@ -330,10 +280,7 @@ const Terminal: React.FC = () => {
             <div ref={terminalRef} className="output-container">
                 <div>
                     {output.map((command, index) => (
-                        <div
-                            key={index}
-                            dangerouslySetInnerHTML={{ __html: command }}
-                        />
+                        <div key={index} dangerouslySetInnerHTML={{ __html: command }} />
                     ))}
                 </div>
             </div>
@@ -343,17 +290,21 @@ const Terminal: React.FC = () => {
                     className="absolute"
                     style={{
                         transform: `translateX(${input.length * 9.6 + 20}px)`,
-                        animation: "blink 1s infinite",
+                        animation: "blink 1s infinite"
                     }}
                 >
                     &#9611;
                 </span>
                 <input
+                    ref={inputRef}
                     type="text"
                     value={input}
                     onChange={handleInputChange}
                     onKeyPress={handleInputKeyPress}
                     autoFocus={true}
+                    autoCorrect="off"
+                    autoCapitalize="off"
+                    onMouseDown={handleMouseDown}
                     className="w-full bg-transparent caret-transparent"
                 />
             </div>
@@ -368,7 +319,7 @@ const Terminal: React.FC = () => {
                     />
                 )}
             </div>
-        </>
+        </div>
     );
 };
 
