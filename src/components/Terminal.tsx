@@ -108,7 +108,7 @@ const Terminal: React.FC = () => {
                 const intro: string =
                     "only a small subset of bash commands are implemented and some functionalities may not exist such as flag options. The list is as follows:";
                 const set: string =
-                    'ls (list), cd (change directory), pwd (print working directory), clear (clear the screen), cat (output a text file), open (similar to "xdg-open" on Linux and "open" on MacOS. *Use it on images or html files)';
+                    '<b>ls</b> (list files/directories) </br> <b>cd</b> &lt;directory&gt; (change to directory) </br> <b>pwd</b> (print working directory) </br> <b>clear</b> (clear the screen) </br> <b>cat</b> &lt;txt file&gt; (output a text file) </br> <b>open</b> &lt;image|html&gt; (opens an image or html file)';
                 const example: string =
                     '<b>For example: ls -> cd Documents -> ls -> cat about.txt</b>'
                 setOutput((prevOutput) => [...prevOutput, intro, set, example]);
