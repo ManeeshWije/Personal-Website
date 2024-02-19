@@ -108,9 +108,8 @@ const Terminal: React.FC = () => {
                 const intro: string =
                     "only a small subset of bash commands are implemented and some functionalities may not exist such as flag options. The list is as follows:";
                 const set: string =
-                    '<b>ls</b> (list files/directories) </br> <b>cd</b> &lt;directory&gt; (change to directory) </br> <b>pwd</b> (print working directory) </br> <b>clear</b> (clear the screen) </br> <b>cat</b> &lt;txt file&gt; (output a text file) </br> <b>open</b> &lt;image|html&gt; (opens an image or html file)';
-                const example: string =
-                    '<b>For example: ls -> cd Documents -> ls -> cat about.txt</b>'
+                    "<b>ls</b> (list files/directories) </br> <b>cd</b> &lt;directory&gt; (change to directory) </br> <b>pwd</b> (print working directory) </br> <b>clear</b> (clear the screen) </br> <b>cat</b> &lt;txt file&gt; (output a text file) </br> <b>open</b> &lt;image|html&gt; (opens an image or html file)";
+                const example: string = "<b>For example: ls -> cd Documents -> ls -> cat about.txt</b>";
                 setOutput((prevOutput) => [...prevOutput, intro, set, example]);
             } else {
                 setOutput((prevOutput) => [
@@ -177,8 +176,7 @@ const Terminal: React.FC = () => {
                         setOutput((prevOutput) => [
                             ...prevOutput,
                             `you can contact me via email: <a href="mailto:m.mwije1@gmail.com">m.mwije1@gmail.com</a>`,
-                            `or connect with me on LinkedIn: <a href="https://www.linkedin.com/in/maneeshwije/">https://www.linkedin.com/in/maneeshwije/</a>`,
-                            `also follow me on Twitter: <a href="https://twitter.com/maneesh_wije">https://twitter.com/maneesh_wije</a>`
+                            `or connect with me on LinkedIn: <a href="https://www.linkedin.com/in/maneeshwije/">https://www.linkedin.com/in/maneeshwije/</a>`
                         ]);
                     } else if (args[1] === "fun_fact.txt") {
                         setOutput((prevOutput) => [
@@ -186,7 +184,7 @@ const Terminal: React.FC = () => {
                             `apart from programming, I also love to stay active by going
                             climbing whether it's the crag in the area or a local gym.
                             As of now, I mainly focus on bouldering and I've been doing
-                            it for around a year with my PB being V8 (7B). Overall, I
+                            it for around a year and a half with my PB being V10 (7C+). Overall, I
                             greatly enjoy the problem-solving aspect of figuring out a
                             boulder problem and being able to push myself physically is
                             an added bonus.`
