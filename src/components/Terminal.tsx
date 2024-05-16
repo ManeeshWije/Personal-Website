@@ -2,18 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 import me from "../../src/assets/me.jpg";
 
 const Terminal: React.FC = () => {
-    const goToDistributive = () => {
-        window.open("/#/distributive", "_blank");
-    };
-
-    const goToNCR = () => {
-        window.open("/#/ncr", "_blank");
-    };
-
-    const goToTulip = () => {
-        window.open("/#/tulip", "_blank");
-    };
-
     const [input, setInput] = useState("");
     const [output, setOutput] = useState<string[]>([]);
     const [showPortrait, setShowPortrait] = useState(false);
@@ -69,7 +57,7 @@ const Terminal: React.FC = () => {
                 } else if (currentDirectory === "/Users/maneesh/Documents") {
                     files = ["about.txt", "contact.txt", "fun_fact.txt"];
                 } else if (currentDirectory === "/Users/maneesh/work_experience") {
-                    files = ["distributive.html", "ncr.html", "tulip.html"];
+                    files = ["S22.html", "F22.html", "S23.html", "W24.html", "S24.html"];
                 } else if (currentDirectory === "/Users") {
                     files = ["maneesh"];
                 } else if (currentDirectory === "/") {
@@ -222,16 +210,16 @@ const Terminal: React.FC = () => {
                 } else if (currentDirectory === "/Users/maneesh/Documents") {
                     setOutput((prevOutput) => [...prevOutput, `ERROR: cannot use open on text files or directories`]);
                 } else if (currentDirectory === "/Users/maneesh/work_experience") {
-                    if (args[1] === "distributive.html") {
-                        setOutput((prevOutput) => [...prevOutput, `redirecting...`]);
-                        goToDistributive();
-                    } else if (args[1] === "ncr.html") {
-                        setOutput((prevOutput) => [...prevOutput, `redirecting...`]);
-                        goToNCR();
-                    } else if (args[1] === "tulip.html") {
-                        setOutput((prevOutput) => [...prevOutput, `redirecting...`]);
-                        goToTulip();
-                    } else {
+                    let files = ['S22.html', 'F22.html', 'S23.html', 'W24.html', 'S24.html'];
+                    let isValidFile = false;
+                    files.forEach((file) => {
+                        if (args[1] === file) {
+                            isValidFile = true;
+                            setOutput((prevOutput) => [...prevOutput, `redirecting...`]);
+                            window.open(`/#/${file.replace(".html", "")}`, "_blank");
+                        }
+                    })
+                    if (!isValidFile) {
                         setOutput((prevOutput) => [...prevOutput, `ERROR: file ${args[1]} not found`]);
                     }
                 } else {

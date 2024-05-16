@@ -3,7 +3,7 @@ import ncr from '../assets/ncr-logo.png';
 import waterloo from '../assets/waterloo.jpg';
 import techNcr from '../assets/tech-ncr.png';
 
-const Ncr: React.FC = () => {
+const F22: React.FC = () => {
     return (
         <>
             <div className='text-[#ddc7a1] animate-in slide-in-from-left-20 duration-700 p-5 pt-8 flex flex-col justify-center items-center'>
@@ -248,4 +248,4 @@ const Ncr: React.FC = () => {
     );
 };
 
-export default Ncr;
+export default F22;

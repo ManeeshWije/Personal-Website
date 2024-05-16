@@ -4,7 +4,7 @@ import distributive from '../assets/distributive.png';
 import kingston from '../assets/kingston.jpg';
 import tech from '../assets/tech.png';
 
-const Distributive: React.FC = () => {
+const S22: React.FC = () => {
     return (
         <>
             <div className='text-[#ddc7a1] animate-in slide-in-from-left-20 duration-700 p-5 pt-8 flex flex-col justify-center items-center'>
@@ -229,4 +229,4 @@ const Distributive: React.FC = () => {
     );
 };
 
-export default Distributive;
+export default S22;
