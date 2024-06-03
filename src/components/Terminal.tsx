@@ -156,14 +156,14 @@ const Terminal: React.FC = () => {
                             `hi, I'm Maneesh, a Computer Science student studying at the University of
                             Guelph who is passionate about developing software and
                             always curious to learn new technologies in the
-                            industry. I program a ton whether it be fullstack applications, code katas, and just random ideas that come to mind.
+                            industry. I program a <i>ton</i> whether it be fullstack applications, code katas, and just random ideas that come to mind.
                             `,
                             `You can check out my other projects here: <a href="https://www.github.com/ManeeshWije">www.github.com/ManeeshWije</a>`
                         ]);
                     } else if (args[1] === "contact.txt") {
                         setOutput((prevOutput) => [
                             ...prevOutput,
-                            `you can contact me via email: <a href="mailto:m.mwije1@gmail.com">m.mwije1@gmail.com</a>`,
+                            `you can contact me via email: <a href="mailto:m.mwije1@proton.me">m.mwije1@proton.me</a>`,
                             `or connect with me on LinkedIn: <a href="https://www.linkedin.com/in/maneeshwije/">https://www.linkedin.com/in/maneeshwije/</a>`
                         ]);
                     } else if (args[1] === "fun_fact.txt") {
