@@ -158,7 +158,8 @@ const Terminal: React.FC = () => {
                             always curious to learn new technologies in the
                             industry. I program a <i>ton</i> whether it be fullstack applications, code katas, and just random ideas that come to mind.
                             `,
-                            `You can check out my other projects here: <a href="https://www.github.com/ManeeshWije">www.github.com/ManeeshWije</a>`
+                            `You can check out my other projects here: <a href="https://www.github.com/ManeeshWije">www.github.com/ManeeshWije</a>`,
+                            `I also have a blog site that I sometimes publish to about programming in general: <a href="https://maneesh-blog.up.railway.app/">https://maneesh-blog.up.railway.app/</a>`
                         ]);
                     } else if (args[1] === "contact.txt") {
                         setOutput((prevOutput) => [
