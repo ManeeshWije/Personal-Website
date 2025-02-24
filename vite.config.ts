@@ -8,6 +8,7 @@ export default defineConfig({
   preview: {
     port: 8080,
     strictPort: true,
+    allowedHosts: ["wijeproject.com"],
   },
   server: {
     port: 8080,
