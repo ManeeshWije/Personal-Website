@@ -1,15 +1,15 @@
-FROM --platform=$BUILDPLATFORM node:18-alpine AS builder
+FROM node:18-alpine AS builder
 
 WORKDIR /app
 
-COPY package.json . 
+COPY package.json .
 
-RUN npm install 
+RUN npm install
 
-COPY . . 
+COPY . .
 
-RUN npm run build 
+RUN npm run build
 
-EXPOSE 80
+COPY . .
 
-CMD ["npm", "run", "preview"]
+EXPOSE 8080
