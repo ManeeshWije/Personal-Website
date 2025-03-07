@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import me from "../assets/me.jpg";
 import climb from "../assets/climb.jpg";
-import resume from "../assets/resume-maneesh.pdf";
+import resume from "../assets/resume.pdf";
 
 const Terminal: React.FC = () => {
     const [input, setInput] = useState("");
